@@ -55,7 +55,7 @@ html body header .header-list {
   align-items: flex-end;
   /*ブロックを下揃え*/
   justify-content: flex-end;
-  /*両端揃えて均等配置*/
+  /*右揃え*/
 }
 
 html body header .header-list li {
@@ -64,14 +64,16 @@ html body header .header-list li {
 
 html body header .header-list li a {
   font-size: 1.7vw;
+  color: #000;
 }
 
 html body main {
-  margin: 21.2vh 22.1vw 0 23.3vw;
+  margin: 0 22.1vw 0 23.3vw;
 }
 
 html body main .dressr-title {
-  margin: 6.2vh 32.6vw 3.7vh 0;
+  margin: 0 27.3vw 3.7vh 0;
+  padding-top: 20vh;
   border-bottom: 1px solid grey;
   font-size: 2vw;
 }
@@ -95,22 +97,25 @@ html body main .instagram-btn {
   line-height: 4.1vh;
   /*上下真ん中寄せ*/
   background-color: #727272;
-  color: #fff;
   font-size: 1.3vw;
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
   box-shadow: 0 5px #dddddd;
 }
 
 html body main .instagram-btn:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 html body main .instagram-btn:active {
   position: relative;
-  top: 7px;
+  top: 5px;
   box-shadow: none;
+}
+
+html body main .instagram-btn a {
+  color: #fff;
 }
 
 html body main .dressr-sentence {
@@ -128,12 +133,12 @@ html body main .process .arrow .arrow-bottom {
   display: none;
 }
 
-html body main .process .process-top {
+html body main .process .process-item .process-style .process-top {
   font-size: 1.3vw;
   font-weight: bold;
 }
 
-html body main .process .process-sentence {
+html body main .process .process-item .process-style .process-sentence {
   margin-top: 2.2vh;
   font-size: 1.1vw;
 }
@@ -141,7 +146,7 @@ html body main .process .process-sentence {
 html body main .contact-btn {
   height: 6.9vh;
   width: 26.6vw;
-  margin: 7vh 0 0 auto;
+  margin: 7vh 0 7vh auto;
   /*ボタンを右寄せ*/
   text-align: center;
   line-height: 6.9vh;
@@ -149,24 +154,25 @@ html body main .contact-btn {
   background-color: #000;
   color: #fff;
   font-size: 2.5vw;
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
   box-shadow: 0 5px #525252;
 }
 
 html body main .contact-btn:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 html body main .contact-btn:active {
   position: relative;
-  top: 7px;
+  top: 5px;
   box-shadow: none;
 }
 
 html body main .ar-title {
-  margin: 6.2vh 32.6vw 3.7vh 0;
+  margin: 0 27.3vw 3.7vh 0;
+  padding-top: 20vh;
   border-bottom: 1px solid grey;
   font-size: 2vw;
 }
@@ -186,33 +192,100 @@ html body main .ar-container .model-viewer {
 
 html body main .ar-container ​ .model-viewer-btn {
   position: absolute;
-  right: 16px;
+  left: 16px;
   bottom: 10px;
-  height: 26px;
+  height: 2.9vw;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 2.9vw;
   color: white;
-  background-color: #6b6868;
+  background-color: #525252;
   border: none;
 }
 
-html body main .ar-container img {
-  width: 17.1vw;
+html body .contact-btn {
+  height: 6.9vh;
+  width: 26.6vw;
+  margin: 7vh 0 7vh auto;
+  /*ボタンを右寄せ*/
+  text-align: center;
+  line-height: 6.9vh;
+  /*テキストを縦に中央揃え*/
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5vw;
+  opacity: 1;
+  cursor: pointer;
+  /*カーソル乗せると指になる*/
+  box-shadow: 0 5px #525252;
+}
+
+html body .contact-btn:hover {
+  opacity: 0.8;
+}
+
+html body .contact-btn:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
 }
 
 html body footer {
   background-color: #ccc;
   color: black;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 600px) {
+  /*----------------------------------------------------------------------------------------*/
+  html body header {
+    height: 9.2vh;
+  }
+  html body header .wakuzawa-logo {
+    width: 25vw;
+    margin: auto auto 1vh 5.3vw;
+  }
+  html body header .header-list {
+    margin-right: 0.8vw;
+    margin-bottom: 1vh;
+    width: 60vw;
+  }
+  html body header .header-list li {
+    margin-right: 3.6vw;
+  }
+  html body header .header-list li a {
+    font-size: 2vw;
+  }
+  html body main {
+    margin: 0 18vw 0 18vw;
+  }
+  html body main .dressr-title {
+    margin: 0 0 3.7vh 0;
+    padding-top: 10vh;
+    border-bottom: 1px solid grey;
+    font-size: 6vw;
+  }
+  html body main .dressr-container img {
+    width: 20vw;
+  }
+  html body main .instagram-btn {
+    width: 32vw;
+    font-size: 2vw;
+    box-shadow: 0 3px #dddddd;
+  }
+  html body main .instagram-btn:active {
+    top: 3px;
+  }
+  html body main .dressr-sentence {
+    margin-top: 3vh;
+    font-size: 2vw;
+  }
   html body main .process {
     display: block;
     /*フレックスボックス解除*/
+    margin-top: 6vh;
   }
   html body main .process .arrow .arrow-right {
     display: none;
@@ -220,5 +293,65 @@ html body footer {
   }
   html body main .process .arrow .arrow-bottom {
     display: block;
+  }
+  html body main .process .process-item {
+    display: flex;
+    justify-content: space-between;
+    /*両端揃えて均等配置*/
+    align-items: center;
+    /*ブロックを中段揃え*/
+  }
+  html body main .process .process-item img {
+    width: 31vw;
+  }
+  html body main .process .process-item .process-style {
+    width: 31vw;
+  }
+  html body main .process .process-item .process-style .process-top {
+    font-size: 3vw;
+  }
+  html body main .process .process-item .process-style .process-sentence {
+    margin-top: 2vh;
+    font-size: 2vw;
+  }
+  html body main .contact-btn {
+    height: 5vh;
+    width: 32vw;
+    margin: 4vh 0 7vh auto;
+    /*ボタンを右寄せ*/
+    line-height: 5vh;
+    /*テキストを縦に中央揃え*/
+    font-size: 3vw;
+    box-shadow: 0 3px #525252;
+  }
+  html body main .contact-btn:active {
+    top: 3px;
+  }
+  html body main .ar-title {
+    margin: 0 0 3.7vh 0;
+    padding-top: 10vh;
+    border-bottom: 1px solid grey;
+    font-size: 6vw;
+  }
+  html body main .ar-container {
+    display: block;
+    /*flexbox解除*/
+    /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
+  }
+  html body main .ar-container .model-viewer {
+    width: 64vw;
+    height: 76.8vw;
+    background-color: #fff;
+  }
+  html body main .ar-container ​ .model-viewer-btn {
+    position: absolute;
+    left: 16px;
+    bottom: 10px;
+    height: 2.9vw;
+    font-weight: bold;
+    line-height: 2.9vw;
+    color: white;
+    background-color: #525252;
+    border: none;
   }
 }

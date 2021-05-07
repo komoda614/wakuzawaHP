@@ -1,13 +1,15 @@
 @charset "UTF-8";
 /* 共通部分 */
 html {
-  font-size: 1rem;
+  font-size: 1.3vh;
 }
 
 html body {
-  font-family: sans-serif, "メイリオ", "Meiryo";
+  font-family: "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif, "メイリオ", "Meiryo";
   line-height: 1.7;
   text-align: left;
+  color: #000;
+  display: flex;
 }
 
 html body * {
@@ -20,6 +22,7 @@ html body * a {
   /*下線引かない*/
   display: block;
   /*ブロック要素に*/
+  color: #000;
 }
 
 html body img {
@@ -33,325 +36,1178 @@ html body ul {
 }
 
 html body header {
-  height: 15vh;
-  width: 100vw;
-  background-color: #fff;
-  display: flex;
+  height: 92vh;
+  width: 18vw;
+  padding: 5vh 0.5vw 0 2vw;
+  border-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  border-right: 1px solid gray;
+  z-index: 9;
+  /*いじってはいけないボタン*/
+  /*いじってはいけないボタン*/
 }
 
 html body header .wakuzawa-logo {
-  margin: 6.6vh auto auto 5.3vw;
-  width: 18vw;
+  margin-bottom: 3.7vh;
+  padding-left: 0.5vw;
+  width: 13vw;
 }
 
-html body header .header-list {
-  margin-right: 0.8vw;
-  width: 32.4vw;
-  display: flex;
-  align-items: flex-end;
-  /*ブロックを下揃え*/
-  justify-content: flex-end;
-  /*右揃え*/
-}
-
-html body header .header-list li {
-  margin-right: 3.6vw;
-}
-
-html body header .header-list li a {
-  font-size: 1.7vw;
-  color: #000;
-}
-
-html body main {
-  margin: 0 22.1vw 0 23.3vw;
-}
-
-html body main .dressr-title {
-  margin: 0 27.3vw 3.7vh 0;
-  padding-top: 20vh;
-  border-bottom: 1px solid grey;
-  font-size: 2vw;
-}
-
-html body main .dressr-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-html body main .dressr-container img {
-  width: 17.1vw;
-}
-
-html body main .instagram-btn {
-  height: 4.1vh;
-  width: 15.2vw;
-  margin-top: 0.9vh;
-  text-align: center;
-  /*左右真ん中寄せ*/
-  line-height: 4.1vh;
-  /*上下真ん中寄せ*/
-  background-color: #727272;
-  font-size: 1.3vw;
-  opacity: 1;
+html body header .btn {
+  margin: 1vh 1vw 0 0;
+  height: 5vmin;
+  width: 100%;
+  display: block;
+  overflow: hidden;
   cursor: pointer;
-  /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #dddddd;
 }
 
-html body main .instagram-btn:hover {
-  opacity: 0.8;
-}
-
-html body main .instagram-btn:active {
+html body header .btn a {
+  width: 100%;
+  height: 5vmin;
   position: relative;
-  top: 5px;
-  box-shadow: none;
 }
 
-html body main .instagram-btn a {
-  color: #fff;
-}
-
-html body main .dressr-sentence {
-  margin-top: 4.6vh;
-  font-size: 1.3vw;
-}
-
-html body main .process {
-  margin-top: 3.7vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-html body main .process .arrow .arrow-bottom {
-  display: none;
-}
-
-html body main .process .process-item .process-style .process-top {
-  font-size: 1.3vw;
-  font-weight: bold;
-}
-
-html body main .process .process-item .process-style .process-sentence {
-  margin-top: 2.2vh;
-  font-size: 1.1vw;
-}
-
-html body main .contact-btn {
-  height: 6.9vh;
-  width: 26.6vw;
-  margin: 7vh 0 7vh auto;
-  /*ボタンを右寄せ*/
-  text-align: center;
-  line-height: 6.9vh;
-  /*テキストを縦に中央揃え*/
-  background-color: #000;
-  color: #fff;
-  font-size: 2.5vw;
-  opacity: 1;
-  cursor: pointer;
-  /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #525252;
-}
-
-html body main .contact-btn:hover {
-  opacity: 0.8;
-}
-
-html body main .contact-btn:active {
-  position: relative;
-  top: 5px;
-  box-shadow: none;
-}
-
-html body main .ar-title {
-  margin: 0 27.3vw 3.7vh 0;
-  padding-top: 20vh;
-  border-bottom: 1px solid grey;
-  font-size: 2vw;
-}
-
-html body main .ar-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
-}
-
-html body main .ar-container .model-viewer {
-  width: 17.1vw;
-  height: 20.5vw;
-  background-color: #fff;
-}
-
-html body main .ar-container ​ .model-viewer-btn {
+html body header .btn a .white {
+  background: #000;
+  text-align: right;
+  height: 4.8vmin;
+  padding: 0.6vh 0.5vw;
+  width: 98%;
   position: absolute;
-  left: 16px;
-  bottom: 10px;
-  height: 2.9vw;
-  font-weight: bold;
-  line-height: 2.9vw;
-  color: white;
-  background-color: #525252;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+html body header .btn a .white img {
+  height: 3.6vmin;
+}
+
+html body header .btn a .black {
+  background-color: #fff;
+  text-align: left;
+  height: 5vmin;
+  padding: 0.7vh 0.5vw;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+html body header .btn a .black img {
+  height: 3.6vmin;
+}
+
+html body header .btn:hover div:nth-of-type(2) {
+  left: 100%;
+  opacity: 0;
   border: none;
 }
 
-html body .contact-btn {
-  height: 6.9vh;
-  width: 26.6vw;
-  margin: 7vh 0 7vh auto;
-  /*ボタンを右寄せ*/
-  text-align: center;
-  line-height: 6.9vh;
-  /*テキストを縦に中央揃え*/
-  background-color: #000;
-  color: #fff;
-  font-size: 2.5vw;
-  opacity: 1;
-  cursor: pointer;
-  /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #525252;
+html body main .top-box {
+  height: 7vh;
+  width: 82.5vw;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 17vw;
+  z-index: 100;
 }
 
-html body .contact-btn:hover {
+html body main .top-box .smf-logo {
+  display: none;
+}
+
+html body main .main-contents {
+  margin: 0 auto 0 20vw;
+  padding: 0 0 20vh 0;
+  width: 78vw;
+  position: relative;
+  background-image: url(../image/wakuzawa薄.png);
+  background-size: 49%;
+  background-repeat: no-repeat;
+  background-position: top 70vh left 47vw;
+  background-attachment: fixed;
+  /*concept*/
+}
+
+html body main .main-contents .home-logo {
+  display: none;
+}
+
+html body main .main-contents .concept-title {
+  /*concept*/
+  margin: 0 auto 18vh 0;
+  padding-top: 10vh;
+  font-size: 5.5vw;
+  line-height: 7vw;
+  font-family: sans-serif;
+}
+
+html body main .main-contents .concept-title span {
+  color: #707070;
+  font-family: "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif, "メイリオ", "Meiryo";
+}
+
+html body main .main-contents .concept-detail {
+  padding-bottom: 8vh;
+  margin: 0 4vw 8vh 0;
+  font-size: 1.8vw;
+  line-height: 2.5vw;
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+
+html body main .main-contents .service {
+  height: 44vw;
+  border-bottom: 1px solid gray;
+}
+
+html body main .main-contents .service .service-top {
+  display: none;
+}
+
+html body main .main-contents .service .produce-box {
+  width: 25vw;
+  height: 25vw;
   opacity: 0.8;
+  background-color: #555;
+  position: relative;
+  top: 6vw;
+  left: 44vw;
 }
 
-html body .contact-btn:active {
+html body main .main-contents .service .produce-box .produce-title {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .produce-box .produce-middle {
+  padding: 0 0.1vw 0 4vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .produce-box .produce-detail {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2px;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .design-box {
+  width: 25vw;
+  height: 25vw;
+  opacity: 0.8;
+  background-color: #939393;
+  position: relative;
+  top: -14vw;
+  left: 22vw;
+}
+
+html body main .main-contents .service .design-box .design-title {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .design-box .design-middle {
+  padding: 0 0.1vw 0 4vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .design-box .design-detail {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2px;
+  font-weight: bold;
+  color: #fff;
+}
+
+html body main .main-contents .service .planning-box {
+  width: 25vw;
+  height: 25vw;
+  opacity: 0.8;
+  background-color: #ededed;
+  position: relative;
+  top: -34vw;
+  left: 0;
+}
+
+html body main .main-contents .service .planning-box .planning-title {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .service .planning-box .planning-detail {
+  padding: 0 0.1vw 0.3vw 4vw;
+  font-size: 2px;
+  font-weight: bold;
+}
+
+html body main .main-contents .header-space {
+  height: 7vh;
+}
+
+html body main .main-contents .package-top {
+  display: none;
+}
+
+html body main .main-contents .menur-container {
+  /*menuR---------------------------------------*/
+  width: 76vw;
+  height: 18.5vw;
+  margin-bottom: 25vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  /*写真が右*/
+}
+
+html body main .main-contents .menur-container .menur-message {
+  width: 44vw;
+  height: 18.5vw;
+  position: relative;
+}
+
+html body main .main-contents .menur-container .menur-message .menur-title {
+  margin-bottom: 0.5vw;
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .menur-container .menur-message .menur-middle {
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .menur-container .menur-message .menur-bottom {
+  font-size: 1.2vw;
+  color: gray;
+}
+
+html body main .main-contents .menur-container .menur-message .menur-link {
+  width: 25vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2.3vw;
+  font-weight: bold;
+  text-align: right;
+  border-bottom: 1px solid #707070;
+}
+
+html body main .main-contents .menur-container img {
+  width: 28vw;
+  height: 18.5vw;
+  z-index: 2;
+}
+
+html body main .main-contents .dressr-container {
+  /*dressR-----------------------------------------*/
+  width: 76vw;
+  height: 18.5vw;
+  margin-bottom: 25vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+html body main .main-contents .dressr-container img {
+  width: 32.6vw;
+  height: 18.5vw;
+  z-index: 2;
+}
+
+html body main .main-contents .dressr-container .dressr-message {
+  width: 39.4vw;
+  height: 18.5vw;
+  position: relative;
+}
+
+html body main .main-contents .dressr-container .dressr-message .dressr-title {
+  margin-bottom: 0.5vw;
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .dressr-container .dressr-message .dressr-middle {
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .dressr-container .dressr-message .dressr-bottom {
+  font-size: 1.2vw;
+  color: gray;
+}
+
+html body main .main-contents .dressr-container .dressr-message .dressr-link {
+  width: 25vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2.3vw;
+  font-weight: bold;
+  text-align: right;
+  border-bottom: 1px solid #707070;
+}
+
+html body main .main-contents .catalogue-container {
+  /*catalogue----------------------------------------------*/
+  width: 76vw;
+  height: 18.5vw;
+  margin-bottom: 25vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  /*写真が右*/
+}
+
+html body main .main-contents .catalogue-container .catalogue-message {
+  width: 39vw;
+  height: 18.5vw;
+  position: relative;
+}
+
+html body main .main-contents .catalogue-container .catalogue-message .catalogue-title {
+  margin-bottom: 0.5vw;
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .catalogue-container .catalogue-message .catalogue-middle {
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .catalogue-container .catalogue-message .catalogue-bottom {
+  font-size: 1.2vw;
+  color: gray;
+}
+
+html body main .main-contents .catalogue-container .catalogue-message .catalogue-link {
+  width: 25vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2.3vw;
+  font-weight: bold;
+  text-align: right;
+  border-bottom: 1px solid #707070;
+}
+
+html body main .main-contents .catalogue-container img {
+  width: 33vw;
+  height: 18.5vw;
+  z-index: 2;
+}
+
+html body main .main-contents .others {
+  z-index: 2;
+  padding-top: 7vh;
+  width: 76vw;
+  display: flex;
+  justify-content: space-between;
+  /*両端揃えて均等配置*/
+}
+
+html body main .main-contents .others .sizear {
+  width: 36vw;
+}
+
+html body main .main-contents .others .sizear .sizear-title {
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .others .sizear img {
+  z-index: 2;
+}
+
+html body main .main-contents .others .character {
+  width: 36vw;
+  padding-top: 16vh;
+}
+
+html body main .main-contents .others .character .character-title {
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .others .character .character-container {
+  display: flex;
+}
+
+html body main .main-contents .others .character .character-container .wagyu {
+  width: 18vw;
+}
+
+html body main .main-contents .others .character .character-container .wagyu img {
+  z-index: 2;
+}
+
+html body main .main-contents .others .character .character-container .wagyu .wagyu-name {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .others .character .character-container .wagyu .wagyu-link {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .others .character .character-container .nanichu {
+  width: 18vw;
+  padding-top: 5.6vh;
+}
+
+html body main .main-contents .others .character .character-container .nanichu img {
+  z-index: 22;
+}
+
+html body main .main-contents .others .character .character-container .nanichu .nanichu-name {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .others .character .character-container .nanichu .nanichu-link {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+
+html body main .asobi {
+  /*wakuzawa-no-asobi-------------------------------------*/
+  margin: 0 0 6vh 18vw;
+  padding: 4vh 0 0 2vw;
+  width: 80vw;
+  background-color: #000;
+}
+
+html body main .asobi * {
+  color: #fff;
+  font-weight: bold;
+}
+
+html body main .asobi .asobi-logo {
+  width: 40vw;
+  background: #000;
+}
+
+html body main .asobi .asobi-main {
+  background-image: url(../image/asobi/space.png);
+  background-size: cover;
+  background-attachment: fixed;
+  /*背景固定*/
+}
+
+html body main .asobi .asobi-main .asobi-detail {
+  margin: 5vh 0;
+  padding-top: 3vh;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+html body main .asobi .asobi-main .asobi-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item {
+  width: 24vw;
+  margin-bottom: 4vh;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item iframe {
+  width: 24vw;
+  height: 13.5vw;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-title-container {
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: space-between;
+  /*両端揃えて均等配置*/
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container {
+  margin-top: calc(6vw - 24px);
+  display: flex;
+  justify-content: space-between;
+  /*両端揃えて均等配置*/
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar {
+  width: calc(24vw - 96px);
+  position: relative;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar img {
+  position: absolute;
+  bottom: 0;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container {
+  width: 96px;
+  display: flex;
+  align-items: flex-end;
+  /*snsボタンは下寄せ*/
+  justify-content: end;
+  /*右寄せ*/
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a {
+  width: 30px;
+  padding-left: 2px;
+  position: relative;
+}
+
+html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a img {
+  position: absolute;
+  bottom: 0;
+}
+
+html body main .asobi .asobi-main .asobi-container .space {
+  width: 2vw;
+}
+
+html body main .contact {
+  background-image: url(../image/wakuzawa薄.png);
+  background-size: 49%;
+  background-repeat: no-repeat;
+  background-position: top 70vh left 47vw;
+  background-attachment: fixed;
+  margin: 0 auto 2vh 20vw;
+  padding-top: 20vh;
+}
+
+html body main .contact .contact-btn {
+  margin-bottom: 3vh;
+  height: 6vh;
+  width: 20vw;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px #292929;
+}
+
+html body main .contact .contact-btn:hover {
+  opacity: 1;
+}
+
+html body main .contact .contact-btn:active {
   position: relative;
   top: 5px;
   box-shadow: none;
 }
 
-html body footer {
-  background-color: #ccc;
-  color: black;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html body main .contact .contact-btn a {
+  height: 6vh;
+  width: 20vw;
+  line-height: 6vh;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+html body main .contact .contact-message {
+  margin-bottom: 30vh;
+  font-size: 1.2vw;
+  color: gray;
+}
+
+html body main .contact .campany-info {
+  width: 76vw;
+  text-align: right;
+  font-size: 1vw;
+  color: gray;
+}
+
+html body main .contact .campany-info .newline {
+  display: none;
+}
+
+html body main .footer {
+  margin-left: 20vw;
+  height: 8vh;
+  width: 76vw;
+  background-color: #fff;
+  text-align: right;
+  /*右寄せ*/
+  line-height: 6vh;
+  /*中段寄せ*/
+  border-top: 1px solid gray;
+}
+
+html body main .smf-contact-btn {
+  display: none;
+}
+
+html body main .btm-nav {
+  display: none;
+}
+
+html body .start {
+  /*トップのアニメーション*/
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+html body .start p {
+  position: fixed;
+  left: 75vw;
+  top: 80vh;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 30vw;
+}
+
+html body .start p img {
+  width: 30vw;
 }
 
 @media (max-width: 600px) {
   /*----------------------------------------------------------------------------------------*/
+  /* 共通部分 */
+  html body {
+    display: block;
+  }
   html body header {
-    height: 9.2vh;
-  }
-  html body header .wakuzawa-logo {
-    width: 25vw;
-    margin: auto auto 1vh 5.3vw;
-  }
-  html body header .header-list {
-    margin-right: 0.8vw;
-    margin-bottom: 1vh;
-    width: 60vw;
-  }
-  html body header .header-list li {
-    margin-right: 3.6vw;
-  }
-  html body header .header-list li a {
-    font-size: 2vw;
+    display: none;
   }
   html body main {
-    margin: 0 18vw 0 18vw;
+    /*以下、スマホのみ出現*/
   }
-  html body main .dressr-title {
-    margin: 0 0 3.7vh 0;
+  html body main .top-box {
+    height: 10vh;
+    width: 100vw;
+    left: 0;
+  }
+  html body main .top-box .smf-logo {
+    display: block;
+    height: 10vh;
+    padding: 3vh 5vw 2vh 5vw;
+  }
+  html body main .top-box .smf-logo img {
+    height: 5vh;
+  }
+  html body main .main-contents {
+    margin: 0;
+    padding: 10vh 0 0 0;
+    width: 100vw;
+    position: relative;
+    /**/
+    background: none;
+    /*concept*/
+  }
+  html body main .main-contents .concept-title {
+    /*concept*/
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding-top: 10vh;
-    border-bottom: 1px solid grey;
-    font-size: 6vw;
+    font-size: 12vw;
+    line-height: 14vw;
   }
-  html body main .dressr-container img {
-    width: 20vw;
+  html body main .main-contents .concept-detail {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 18vh;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    font-size: 4vw;
+    line-height: 4vw;
+    border-bottom: none;
   }
-  html body main .instagram-btn {
-    width: 32vw;
-    font-size: 2vw;
-    box-shadow: 0 3px #dddddd;
+  html body main .main-contents .line-space {
+    margin-left: 2.5vw;
+    width: 95vw;
+    height: 1px;
+    border-bottom: 1px solid #000;
   }
-  html body main .instagram-btn:active {
-    top: 3px;
+  html body main .main-contents .service {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 10vh;
+    height: 120vh;
+    width: 90vw;
   }
-  html body main .dressr-sentence {
-    margin-top: 3vh;
-    font-size: 2vw;
-  }
-  html body main .process {
+  html body main .main-contents .service .service-top {
     display: block;
-    /*フレックスボックス解除*/
-    margin-top: 6vh;
+    padding: 1vh 10vw 1vh 0;
+    height: 5vh;
+    border-bottom: 1px solid #000;
   }
-  html body main .process .arrow .arrow-right {
-    display: none;
-    /*右矢印削除*/
+  html body main .main-contents .service .produce-box {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.8;
+    background-color: #555;
+    position: relative;
+    top: 114vw;
+    left: 28.3vw;
   }
-  html body main .process .arrow .arrow-bottom {
+  html body main .main-contents .service .produce-box .produce-title {
+    padding: 8vw 2vw 1vw 2vw;
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .produce-box .produce-middle {
+    padding: 0 2vw 0 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .produce-box .produce-detail {
+    padding: 0 2vw 2vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .design-box {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.8;
+    background-color: #939393;
+    position: relative;
+    top: 2vw;
+    left: 14.1vw;
+  }
+  html body main .main-contents .service .design-box .design-title {
+    padding: 8vw 2vw 1vw 2vw;
+    font-size: 4.5vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .design-box .design-middle {
+    padding: 0 2vw 0 2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .design-box .design-detail {
+    padding: 0 2vw 2vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+  }
+  html body main .main-contents .service .planning-box {
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.8;
+    background-color: #ededed;
+    position: relative;
+    top: -110vw;
+    left: 0;
+  }
+  html body main .main-contents .service .planning-box .planning-title {
+    padding: 8vw 2vw 1vw 2vw;
+    font-size: 4.5vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .service .planning-box .planning-detail {
+    padding: 0 2vw 2vw 2vw;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .header-space {
+    height: 7vh;
+  }
+  html body main .main-contents .package-top {
+    display: block;
+    margin: 0 5vw 4vh 5vw;
+    padding: 1vh 10vw 1vh 0;
+    height: 5vh;
+    border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .menur-container {
+    /*menuR---------------------------------------*/
+    width: 100vw;
+    padding: 0 2.5vw;
+    height: 110vw;
+    margin-bottom: 5vh;
     display: block;
   }
-  html body main .process .process-item {
+  html body main .main-contents .menur-container img {
+    margin: 0 2.5vw;
+    width: 90vw;
+    height: 50vw;
+    z-index: 2;
+  }
+  html body main .main-contents .menur-container .menur-message {
+    margin: 0 2.5vw;
+    width: 90vw;
+    height: 55vw;
+    position: relative;
+  }
+  html body main .main-contents .menur-container .menur-message .menur-title {
+    margin-bottom: 1vw;
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  html body main .main-contents .menur-container .menur-message .menur-middle {
+    margin-bottom: 1vw;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .menur-container .menur-message .menur-bottom {
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: gray;
+  }
+  html body main .main-contents .menur-container .menur-message .menur-link {
+    margin: 0 0 4vw auto;
+    width: 60vw;
+    bottom: 0;
+    right: 0;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .dressr-container {
+    /*dressR-----------------------------------------*/
+    width: 100vw;
+    padding: 0 2.5vw;
+    height: 110vw;
+    margin-bottom: 5vh;
+    display: block;
+  }
+  html body main .main-contents .dressr-container img {
+    width: 90vw;
+    height: 50vw;
+    z-index: 2;
+  }
+  html body main .main-contents .dressr-container .dressr-message {
+    margin: 0 2.5vw;
+    width: 90vw;
+    height: 55vw;
+    position: relative;
+  }
+  html body main .main-contents .dressr-container .dressr-message .dressr-title {
+    margin-bottom: 1vw;
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  html body main .main-contents .dressr-container .dressr-message .dressr-middle {
+    margin-bottom: 1vw;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .dressr-container .dressr-message .dressr-bottom {
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: gray;
+  }
+  html body main .main-contents .dressr-container .dressr-message .dressr-link {
+    margin: 0 0 4vw auto;
+    width: 60vw;
+    bottom: 0;
+    right: 0;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .catalogue-container {
+    /*catalogue----------------------------------------------*/
+    width: 95vw;
+    padding: 0 0 15vh 0;
+    height: 110vw;
+    margin: 0 2.5vw 10vh 2.5vw;
+    display: block;
+    border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .catalogue-container img {
+    width: 90vw;
+    height: 50vw;
+    z-index: 2;
+  }
+  html body main .main-contents .catalogue-container .catalogue-message {
+    margin: 0 2.5vw;
+    width: 90vw;
+    height: 55vw;
+    position: relative;
+  }
+  html body main .main-contents .catalogue-container .catalogue-message .catalogue-title {
+    margin-bottom: 1vw;
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  html body main .main-contents .catalogue-container .catalogue-message .catalogue-middle {
+    margin-bottom: 1vw;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .catalogue-container .catalogue-message .catalogue-bottom {
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color: gray;
+  }
+  html body main .main-contents .catalogue-container .catalogue-message .catalogue-link {
+    margin: 0 0 4vw auto;
+    width: 60vw;
+    bottom: 0;
+    right: 0;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .others {
+    z-index: 2;
+    padding-top: 7vh;
+    width: 95vw;
+    margin: 0 2.5vw;
+    display: block;
+  }
+  html body main .main-contents .others .sizear {
+    width: 90vw;
+    margin: 0 2.5vw;
+  }
+  html body main .main-contents .others .sizear .sizear-title {
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  html body main .main-contents .others .sizear img {
+    z-index: 2;
+    width: 90vw;
+  }
+  html body main .main-contents .others .character {
+    width: 90vw;
+    margin: 0 2.5vw;
+    padding-top: 16vh;
+  }
+  html body main .main-contents .others .character .character-title {
+    font-size: 9vw;
+    font-weight: 900;
+  }
+  html body main .main-contents .others .character .character-container {
+    display: flex;
+  }
+  html body main .main-contents .others .character .character-container .wagyu {
+    width: 45vw;
+  }
+  html body main .main-contents .others .character .character-container .wagyu img {
+    z-index: 22;
+  }
+  html body main .main-contents .others .character .character-container .wagyu .wagyu-name {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .others .character .character-container .wagyu .wagyu-link {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .others .character .character-container .nanichu {
+    width: 45vw;
+    padding-top: 0;
+  }
+  html body main .main-contents .others .character .character-container .nanichu img {
+    z-index: 22;
+  }
+  html body main .main-contents .others .character .character-container .nanichu .nanichu-name {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .others .character .character-container .nanichu .nanichu-link {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  html body main .asobi {
+    /*wakuzawa-no-asobi-------------------------------------*/
+    margin: 10vh 0 0 0;
+    padding: 4vh 2.5vw 0 2.5vw;
+    width: 100vw;
+    position: relative;
+    z-index: 500;
+  }
+  html body main .asobi .asobi-logo {
+    width: 95vw;
+    margin: 2vh 0;
+  }
+  html body main .asobi .asobi-main .asobi-detail {
+    margin: 5vh 0;
+    padding-top: 3vh;
+    color: #fff;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item {
+    width: 95vw;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item iframe {
+    width: 95vw;
+    height: 53.4vw;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-title-container {
+    font-size: 8vw;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container {
+    margin-top: calc(24vw - 25px);
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar {
+    width: calc(95vw - 98px);
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container {
+    width: 102px;
     display: flex;
     justify-content: space-between;
     /*両端揃えて均等配置*/
-    align-items: center;
-    /*ブロックを中段揃え*/
   }
-  html body main .process .process-item img {
-    width: 31vw;
+  html body main .asobi .asobi-main .asobi-container .space {
+    width: 2vw;
   }
-  html body main .process .process-item .process-style {
-    width: 31vw;
-  }
-  html body main .process .process-item .process-style .process-top {
-    font-size: 3vw;
-  }
-  html body main .process .process-item .process-style .process-sentence {
-    margin-top: 2vh;
-    font-size: 2vw;
-  }
-  html body main .contact-btn {
-    height: 5vh;
-    width: 32vw;
-    margin: 4vh 0 7vh auto;
-    /*ボタンを右寄せ*/
-    line-height: 5vh;
-    /*テキストを縦に中央揃え*/
-    font-size: 3vw;
-    box-shadow: 0 3px #525252;
-  }
-  html body main .contact-btn:active {
-    top: 3px;
-  }
-  html body main .ar-title {
-    margin: 0 0 3.7vh 0;
+  html body main .contact {
+    background: none;
+    width: 90vw;
+    margin: 10vh 2.5vw 0 2.5vw;
     padding-top: 10vh;
-    border-bottom: 1px solid grey;
-    font-size: 6vw;
   }
-  html body main .ar-container {
+  html body main .contact .contact-btn {
+    margin-bottom: 3vh;
+    height: 6vh;
+    width: 70vw;
+  }
+  html body main .contact .contact-btn a {
+    width: 70vw;
+    font-size: 5vw;
+  }
+  html body main .contact .contact-message {
+    margin-bottom: 30vh;
+    font-size: 4vw;
+  }
+  html body main .contact .campany-info {
+    width: 90vw;
+    text-align: right;
+    font-size: 4vw;
+  }
+  html body main .contact .campany-info .newline {
     display: block;
-    /*flexbox解除*/
-    /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
   }
-  html body main .ar-container .model-viewer {
-    width: 64vw;
-    height: 76.8vw;
-    background-color: #fff;
+  html body main .footer {
+    margin: 2vh 2.5vw 0 2.5vw;
+    padding-bottom: 12vh;
+    height: 8vh;
+    width: 95vw;
+    text-align: right;
+    /*右寄せ*/
+    line-height: 8vh;
+    /*中段寄せ*/
+    border-top: 1px solid gray;
   }
-  html body main .ar-container ​ .model-viewer-btn {
+  html body main .smf-contact-btn {
+    display: block;
+    /*スマホで出現*/
+    height: 30px;
+    width: 110px;
+    background-color: #000;
+    opacity: 0.8;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px #292929;
+    position: fixed;
+    top: 80vh;
+    left: 68vw;
+    z-index: 50;
+  }
+  html body main .smf-contact-btn:hover {
+    opacity: 1;
+  }
+  html body main .smf-contact-btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+  }
+  html body main .smf-contact-btn a img {
+    width: 96px;
     position: absolute;
-    left: 16px;
-    bottom: 10px;
-    height: 2.9vw;
-    font-weight: bold;
-    line-height: 2.9vw;
-    color: white;
-    background-color: #525252;
-    border: none;
+    /*縦横中央寄せ*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  html body main .btm-nav {
+    display: block;
+    /*スマホで出現*/
+    width: 100vw;
+    height: 7vh;
+    padding: 0 1vw;
+    background: #fff;
+    z-index: 50;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  html body main .btm-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  html body main .btm-nav ul li {
+    width: 24vw;
+  }
+  html body main .btm-nav ul li a {
+    width: 24vw;
+    padding: 4vw 3vw;
+  }
+  html body main .btm-nav ul li a img {
+    width: 18vw;
+  }
+  html body .start {
+    /*トップのアニメーション*/
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+  }
+  html body .start p {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 70vw;
+  }
+  html body .start p img {
+    width: 70vw;
   }
 }

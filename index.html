@@ -4,252 +4,356 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dressR 3D/ARcatalogue</title>
+    <title>WAKUZAWA</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- ファビコン -->
+    <link rel="apple-touch-icon" sizes="152x152" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="image/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- jQueryのCDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-    <!-- bodyタグ内の任意の位置に配置-->
-    <script
-    type="module"
-    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+    <header>  <!-- PCのみ -->
+        <a href="index.html" class="wakuzawa-logo"><img src="image/wakuzawa黒.png" alt="ワクザワ"></a>
+        <!-- メニューボタン　いじってはいけない -->
+        <div class="btn">
+            <a href="#concept">
+              <div class="white">
+                  <img src="image/concept白.png"/>
+              </div>
+              <div class="black">
+                  <img src="image/concept黒.png"/>
+              </div>
+            </a>
+        </div>
+        <div class="btn">
+            <a href="#service">
+              <div class="white">
+                  <img src="image/service白.png"/>
+              </div>
+              <div class="black">
+                  <img src="image/service黒.png"/>
+              </div>
+            </a>
+        </div>
+        <div class="btn">
+            <a href="#package">
+              <div class="white">
+                  <img src="image/package白.png"/>
+              </div>
+              <div class="black">
+                  <img src="image/package黒.png"/>
+              </div>
+            </a>
+        </div>
+        <div class="btn">
+            <a href="#others">
+              <div class="white">
+                  <img src="image/others白.png"/>
+              </div>
+              <div class="black">
+                  <img src="image/others黒.png"/>
+              </div>
+            </a>
+        </div>
+        <div class="btn">
+            <a href="#contact">
+              <div class="white">
+                  <img src="image/contact白.png"/>
+              </div>
+              <div class="black">
+                  <img src="image/contact黒.png"/>
+              </div>
+            </a>
+        </div>
 
-    <header>
-        <a href="https://wakuzawa-inc.com/" class="wakuzawa-logo"><img src="image/ワクザワ黒.png" alt="ワクザワ"></a>
-        <ul class="header-list">
-            <li><a href="#dressr-title">dressR</a></li>
-            <li><a href="#ar-title">3D/AR CATALOGUE</a></li>
-        </ul>
 
     </header>
 
     <main>
-        <h1 class="dressr-title" id="dressr-title">dressR</h1>    <!-- dressR -->
-
-        <div class="dressr-container">
-            <img src="image/dressr-l.png" alt="dressr-l">
-            <img src="image/dressr-c.png" alt="dressr-c">
-            <img src="image/dressr-r.png" alt="dressr-r">
+        <div class="top-box">
+            <a href="index.html" class="smf-logo">  <!-- スマホのみ -->
+                <img src="image/wakuzawa黒.png" alt="ワクザワ">
+            </a>
         </div>
 
-        <div class="instagram-btn">
-            <a href="https://www.instagram.com/ar/2991277431099284">Instagramで体験する</a>            
-        </div>
+        <div class="main-contents">
+            <h1 class="concept-title" id="concept">
+                ワクワク<span>と</span><br>
+                ザワザワ<span>を</span><br>
+                ソウゾウ<span>する。</span>
+            </h1>
 
-        <p class="dressr-sentence">
-            SNS上でアクセサリー類の試着が可能になるフィルターを提供。
-        </p>
+            <p class="concept-detail">
+                ウェブ・アプリ・SNS・動画・xR etc.<br>
+                企画からデザイン・制作・開発をプロデュース
+            </p>
 
-        <div class="process">
-            <div class="process-item">
-                <img src="image/写真撮影-d.png" alt="写真撮影">
-                <div class="process-style">
-                    <p class="process-top">写真撮影</p>
-                    <p class="process-sentence">商品の撮影を行います</p>
+            <div class="line-space"></div>
+
+            <div class="service" id="service">
+                <img src="image/service黒.png" alt="service" class="service-top">  <!-- スマホのみ -->
+                <div class="produce-box">
+                    <p class="produce-title">Produce</p>
+                    <p class="produce-middle">
+                        SNSフィルター開発
+                    </p>
+                    <p class="produce-detail">
+                        インスタグラムPRに最適
+                    </p>
+                    <p class="produce-middle">
+                        動画撮影
+                    </p>
+                    <p class="produce-detail">
+                        インスタグラムPRに最適
+                    </p>
+                    <p class="produce-middle">
+                        WebAR開発
+                    </p>
+                    <p class="produce-detail">
+                        専用アプリ・マーカー不要、
+                        Webサイトで簡単に使用可能に、ARコンテンツ全般、
+                        立体見本(3D対応サイト)Webフィルター(顔認識)
+                    </p>
+
                 </div>
-            </div>
-            
-            <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                <div class="design-box">
+                    <p class="design-title">design</p>
+                    <p class="design-middle">
+                        2D,3Dデザイン
+                    </p>
+                    <p class="design-detail">
+                        サイトデザイン/ロゴデザイン/画像制作/
+                        3Dモデル作成/キャラクターデザイン
+                    </p>
+                    <p class="design-middle">
+                        フォトグラメトリ
+                    </p>
+                    <p class="design-detail">
+                        写真から精巧な3Dイメージを作成
+                    </p>
+                </div>
+
+                <div class="planning-box">
+                    <p class="planning-title">planning/PR</p>
+                    <p class="planning-detail">
+                        AR/VRコンテンツや
+                        web動画/インスタグラム広告などの
+                        コンテンツ制作から拡散方法まで企画
+                    </p>
+                    
+                </div>
+
+            </div>  <!-- サービス -->
+
+            <div class="header-space" id="package"></div>
+
+            <img src="image/package黒.png" alt="package" class="package-top">  <!-- スマホのみ -->
+
+
+            <div class="menur-container">
+                <img src="image/menuR.png" alt="menuR">
+
+                <div class="menur-message"> <!-- flexbox用 -->
+                    <h2 class="menur-title">menuR</h2>
+                    <p class="menur-middle">注文でもう迷わない。ARで見れる新しいメニュー</p>
+                    <p class="menur-bottom">
+                        デバイス（スマートフォン/タブレット）をかざすことで<br>
+                        "実物大"のメニューを確認できるwebARの制作。
+                    </p>
+                    <a href="menuR/index.html" class="menur-link">詳しくはこちら</a>
+                </div>
+
             </div>
 
-            <div class="process-item">
-                <img src="image/フォトグラメトリ-d.png" alt="フォトグラメトリ">
-                <div class="process-style">
-                    <p class="process-top">フォトグラメトリ</p>
-                    <p class="process-sentence">撮影した写真から３Ｄモデルを制作します</p>
+            <div class="dressr-container">
+                <img src="image/dressR.png" alt="dressR">
+                <div class="dressr-message"> <!-- flexbox用 -->
+                    <h3 class="dressr-title">dressR</h2>
+                    <p class="dressr-middle">いつでもどこでも、ARで始まるショッピング</p>
+                    <p class="dressr-bottom">
+                        SNS上でアクセサリーの試着を楽しめるARフィルターを提供。
+                    </p>
+                    <a href="dressR-3DARcatalogue/index.html" class="dressr-link">詳しくはこちら</a>
                 </div>
-            </div>
-            
-            <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                
             </div>
 
-            <div class="process-item">
-                <img src="image/AR化-d.png" alt="AR化">
-                <div class="process-style">
-                    <p class="process-top">AR化</p>
-                    <p class="process-sentence">ARを表示するサイトを作成いたします</p>
+            <div class="catalogue-container">
+                <img src="image/3DARcatalogue.png" alt="3DARcatalogue">
+
+                <div class="catalogue-message"> <!-- flexbox用 -->
+                    <h4 class="catalogue-title">3D/AR CATALOGUE</h2>
+                    <p class="catalogue-middle">注文でもう迷わない。ARで見れる新しいカタログ</p>
+                    <p class="catalogue-bottom">
+                        デバイス（スマートフォン/タブレット）をかざすことで<br>
+                        "実物大"のカタログを閲覧できるwebARの制作。
+                    </p>
+                    <a href="dressR-3DARcatalogue/index.html#ar-title" class="catalogue-link">詳しくはこちら</a>
                 </div>
+
             </div>
+
+            <div class="others" id="others">
+                <div class="sizear">
+                    <h5 class="sizear-title">SiZEAR</h5>
+                    <img src="image/sizear.png" alt="SiZEAR">
+                </div>
+
+                <div class="character">
+                    <h6 class="character-title">CHARACTER</h6>
+                    <div class="character-container">
+                        <div class="wagyu">
+                            <img src="image/wagyu.png" alt="wagyu">
+                            <p class="wagyu-name">ワ牛</p>
+                            <a href="https://store.line.me/stickershop/author/1824232/ja" class="wagyu-link">LINEスタンプ</a>
+                        </div>
+                        <div class="nanichu">
+                            <img src="image/nanichu.png" alt="nanichu">
+                            <p class="nanichu-name">なにチュウ</p>
+                            <a href="https://store.line.me/stickershop/author/2085573/ja" class="nanichu-link">LINEスタンプ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- others -->
+        </div>   <!-- main-contents -->
+
+
+
+        <div class="asobi"> <!--wakuzawa-no-asobi-->
+            <img src="image/asobi/asobi_logo.png" alt="asobi-logo" class="asobi-logo">
+            <div class="asobi-main">                
+                <p class="asobi-detail">
+                Please take an AR free.<br>
+                このサイト上にあるARはご自由にお使いください。
+                </p>
+                <div class="asobi-container">
+                    <div class="asobi-item">   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hUgxFq2Yavg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="asobi-title-container">
+                            <p class="asobi-title-en">moon</p>
+                            <p class="asobi-title-ja">月</p>
+                        </div>
+                        <div class="asobi-btn-container">
+                            <a class="start-ar" href=""><img src="image/asobi/startar.png" alt="startAR"></a>
+                            <div class="sns-btn-container">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/hUgxFq2Yavg"><img src="image/asobi/facebook.png"></a>
+                                <a href="https://social-plugins.line.me/lineit/share?url=https://youtu.be/hUgxFq2Yavg"><img src="image/asobi/line.png"></a>
+                                <a href="https://twitter.com/share?text=&url=https://youtu.be/hUgxFq2Yavg&hashtags="><img src="image/asobi/twitter.png"></a>                  
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="space"></div>
+
+                    <div class="asobi-item">   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PMXRo5fb7II" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="asobi-title-container">
+                            <p class="asobi-title-en">moon</p>
+                            <p class="asobi-title-ja">月</p>
+                        </div>
+                        <div class="asobi-btn-container">
+                            <a class="start-ar" href=""><img src="image/asobi/startar.png" alt="startAR"></a>
+                            <div class="sns-btn-container">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/PMXRo5fb7II"><img src="image/asobi/facebook.png"></a>
+                                <a href="https://social-plugins.line.me/lineit/share?url=https://www.youtube.com/embed/PMXRo5fb7II"><img src="image/asobi/line.png"></a>
+                                <a href="https://twitter.com/share?text=&url=https://www.youtube.com/embed/PMXRo5fb7II&hashtags="><img src="image/asobi/twitter.png"></a>                  
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="space"></div>
+
+                    <div class="asobi-item">   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KVrQ4mMfgdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="asobi-title-container">
+                            <p class="asobi-title-en">moon</p>
+                            <p class="asobi-title-ja">月</p>
+                        </div>
+                        <div class="asobi-btn-container">
+                            <a class="start-ar" href=""><img src="image/asobi/startar.png" alt="startAR"></a>
+                            <div class="sns-btn-container">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/KVrQ4mMfgdg"><img src="image/asobi/facebook.png"></a>
+                                <a href="https://social-plugins.line.me/lineit/share?url=https://www.youtube.com/embed/KVrQ4mMfgdg"><img src="image/asobi/line.png"></a>
+                                <a href="https://twitter.com/share?text=&url=https://www.youtube.com/embed/KVrQ4mMfgdg&hashtags="><img src="image/asobi/twitter.png"></a>                  
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="asobi-item">   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NMWAqrES0_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="asobi-title-container">
+                            <p class="asobi-title-en">moon</p>
+                            <p class="asobi-title-ja">月</p>
+                        </div>
+                        <div class="asobi-btn-container">
+                            <a class="start-ar" href=""><img src="image/asobi/startar.png" alt="startAR"></a>
+                            <div class="sns-btn-container">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/NMWAqrES0_4"><img src="image/asobi/facebook.png"></a>
+                                <a href="https://social-plugins.line.me/lineit/share?url=https://www.youtube.com/embed/NMWAqrES0_4"><img src="image/asobi/line.png"></a>
+                                <a href="https://twitter.com/share?text=&url=https://www.youtube.com/embed/NMWAqrES0_4&hashtags="><img src="image/asobi/twitter.png"></a>                  
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="space"></div>
+
+                </div>  
+            </div>  
+        </div>  <!--wakuzawa-no-asobi-->
+
+        <div class="contact" id="contact"><!-- contact -->
+            <div class="contact-btn"><a href="https://forms.gle/XvuzyeUvCUsEP92V8">お問い合わせはこちらから</a></div>
+            <p class="contact-message">
+                お仕事やお見積もりのご依頼、ご相談を承ります。<br>
+                お気軽にご相談ください。
+            </p>
+            <p class="campany-info">
+                合同会社ワクザワ<br>
+                代表者：黒澤恒大　<br class="newline">
+                設立：2020年9月10日　<br class="newline">
+                資本金：3,000,000円　<br class="newline">
+                電話番号：03-6458-4326
+            </p>
         </div>
 
-        <div class="contact-btn">
-            CONTACT
+        <div class="footer">
+            <p><small>&copy;wakuzawa-inc.All Rights Reserved</small></p>
         </div>
+        
+        <!-- 以下、スマホで出現 -->
+        <div class="smf-contact-btn"><a href="https://forms.gle/XvuzyeUvCUsEP92V8"><img src="image/contact白.png"></a></div>
 
-        <h2 class="ar-title" id="ar-title">3D/AR CATALOGUE</h2>    <!-- 3D/AR-catalogue -->
 
-        <div class="ar-container">  <!--mv------------------------------------------>
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/skirt.usdz"
-            src="model/skirt.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-            クリックしてARを表示
-            </button>
-            </model-viewer>
-
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/hoodie.usdz"
-            src="model/hoodie.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-                クリックしてARを表示
-            </button>
-            </model-viewer>
-
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/sweater.usdz"
-            src="model/sweater.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-                クリックしてARを表示
-            </button>
-            </model-viewer>
-
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/gassyou.usdz"
-            src="model/gassyou.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-                クリックしてARを表示
-            </button>
-            </model-viewer>
-
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/tonbi.usdz"
-            src="model/tonbi.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-                クリックしてARを表示
-            </button>
-            </model-viewer>
-
-            <!-- slick.jsアイテム-->
-            <!-- ios-srcとsrcのパスは要変更-->
-            <model-viewer
-            class="model-viewer"
-            ios-src="model/cape.usdz"
-            src="model/cape.glb"
-            preload="preload"
-            camera-controls="camera-controls"
-            shadow-intensity="1"
-            ar="ar"
-            ar-modes="webxr scene-viewer quick-look fallback"
-            ar-scale="fixed"
-            alt="A 3D model of notconventional"
-            >
-            <button class="model-viewer-btn" slot="ar-button">
-                クリックしてARを表示
-            </button>
-            </model-viewer>
-
+        <div class="btm-nav">
+            <ul>
+                <li><a href="#concept"><img src="image/concept黒.png"></a></li>
+                <li><a href="#service"><img src="image/service黒.png"></a></li>
+                <li><a href="#package"><img src="image/package黒.png"></a></li>
+                <li><a href="#others"><img src="image/others黒.png"></a></li>
+            </ul>
         </div>
-
-        <p class="ar-sentence">
-            ECサイト上でよりリアルな商品の閲覧体験ができるオンラインカタログサービス。
-        </p>
-
-        <div class="process">
-            <div class="process-item">
-                <img src="image/写真撮影-d.png" alt="写真撮影">
-                <div class="process-style">
-                    <p class="process-top">写真撮影</p>
-                    <p class="process-sentence">商品の撮影を行います</p>
-                </div>
-            </div>
-            
-            <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
-            </div>
-
-            <div class="process-item">
-                <img src="image/フォトグラメトリ-d.png" alt="フォトグラメトリ">
-                <div class="process-style">
-                    <p class="process-top">フォトグラメトリ</p>
-                    <p class="process-sentence">撮影した写真から３Ｄモデルを制作します</p>
-                </div>
-            </div>
-            
-            <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
-            </div>
-
-            <div class="process-item">
-                <img src="image/AR化-d.png" alt="AR化">
-                <div class="process-style">
-                    <p class="process-top">AR化</p>
-                    <p class="process-sentence">ARを表示するサイトを作成いたします</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact-btn">
-            CONTACT
-        </div>
-
 
     </main>
 
-    <footer>
-        <p><small>&copy;wakuzawa-inc.All Rights Reserved</small></p>
-    </footer>
+    <div class="start"> <!--------------------------------- トップのアニメーション -->
+        <p><img src="image/ワクザワ黒.png" alt=""></p>
+    </div>
+    <script>
+        $(function() {
+            setTimeout(function(){
+                $('.start p').fadeIn(1600);
+            },500); //0.5秒後にロゴをフェードイン!
+            setTimeout(function(){
+                $('.start').fadeOut(500);
+            },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+        });
+    </script>
+
+
 </body>
 </html>

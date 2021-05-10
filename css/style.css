@@ -32,7 +32,7 @@ html body img {
 
 html body ul {
   list-style-type: none;
-  /*listに黒点つけない*/
+  /*listに-bl点つけない*/
 }
 
 html body header {
@@ -135,7 +135,7 @@ html body main .main-contents {
   padding: 0 0 20vh 0;
   width: 78vw;
   position: relative;
-  background-image: url(../image/wakuzawa薄.png);
+  background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
   background-position: top 70vh left 47vw;
@@ -592,7 +592,7 @@ html body main .asobi .asobi-main .asobi-container .space {
 }
 
 html body main .contact {
-  background-image: url(../image/wakuzawa薄.png);
+  background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
   background-position: top 70vh left 47vw;
@@ -788,7 +788,7 @@ html body .start p img {
   }
   html body main .main-contents .service .produce-box .produce-detail {
     padding: 0 2vw 2vw 2vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #fff;
   }
@@ -815,7 +815,7 @@ html body .start p img {
   }
   html body main .main-contents .service .design-box .design-detail {
     padding: 0 2vw 2vw 2vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #fff;
   }
@@ -835,11 +835,12 @@ html body .start p img {
   }
   html body main .main-contents .service .planning-box .planning-detail {
     padding: 0 2vw 2vw 2vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
   }
   html body main .main-contents .header-space {
-    height: 7vh;
+    padding-top: 10vh;
+    height: 1vh;
   }
   html body main .main-contents .package-top {
     display: block;
@@ -850,8 +851,8 @@ html body .start p img {
   }
   html body main .main-contents .menur-container {
     /*menuR---------------------------------------*/
-    width: 100vw;
-    padding: 0 2.5vw;
+    width: 95vw;
+    margin: 0 2.5vw;
     height: 110vw;
     margin-bottom: 5vh;
     display: block;
@@ -860,7 +861,6 @@ html body .start p img {
     margin: 0 2.5vw;
     width: 90vw;
     height: 50vw;
-    z-index: 2;
   }
   html body main .main-contents .menur-container .menur-message {
     margin: 0 2.5vw;
@@ -870,12 +870,12 @@ html body .start p img {
   }
   html body main .main-contents .menur-container .menur-message .menur-title {
     margin-bottom: 1vw;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 900;
   }
   html body main .main-contents .menur-container .menur-message .menur-middle {
     margin-bottom: 1vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bold;
   }
   html body main .main-contents .menur-container .menur-message .menur-bottom {
@@ -887,8 +887,6 @@ html body .start p img {
   html body main .main-contents .menur-container .menur-message .menur-link {
     margin: 0 0 4vw auto;
     width: 60vw;
-    bottom: 0;
-    right: 0;
     font-size: 5vw;
     font-weight: bold;
     text-align: right;
@@ -896,16 +894,16 @@ html body .start p img {
   }
   html body main .main-contents .dressr-container {
     /*dressR-----------------------------------------*/
-    width: 100vw;
-    padding: 0 2.5vw;
+    width: 95vw;
+    margin: 0 2.5vw;
     height: 110vw;
     margin-bottom: 5vh;
     display: block;
   }
   html body main .main-contents .dressr-container img {
+    margin: 0 2.5vw;
     width: 90vw;
     height: 50vw;
-    z-index: 2;
   }
   html body main .main-contents .dressr-container .dressr-message {
     margin: 0 2.5vw;
@@ -915,12 +913,12 @@ html body .start p img {
   }
   html body main .main-contents .dressr-container .dressr-message .dressr-title {
     margin-bottom: 1vw;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 900;
   }
   html body main .main-contents .dressr-container .dressr-message .dressr-middle {
     margin-bottom: 1vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bold;
   }
   html body main .main-contents .dressr-container .dressr-message .dressr-bottom {
@@ -932,8 +930,6 @@ html body .start p img {
   html body main .main-contents .dressr-container .dressr-message .dressr-link {
     margin: 0 0 4vw auto;
     width: 60vw;
-    bottom: 0;
-    right: 0;
     font-size: 5vw;
     font-weight: bold;
     text-align: right;
@@ -942,16 +938,18 @@ html body .start p img {
   html body main .main-contents .catalogue-container {
     /*catalogue----------------------------------------------*/
     width: 95vw;
-    padding: 0 0 15vh 0;
+    margin: 0 2.5vw;
     height: 110vw;
-    margin: 0 2.5vw 10vh 2.5vw;
+    margin-bottom: 5vh;
     display: block;
+    height: 120vw;
+    padding-bottom: 10vw;
     border-bottom: 1px solid #000;
   }
   html body main .main-contents .catalogue-container img {
+    margin: 0 2.5vw;
     width: 90vw;
     height: 50vw;
-    z-index: 2;
   }
   html body main .main-contents .catalogue-container .catalogue-message {
     margin: 0 2.5vw;
@@ -961,12 +959,12 @@ html body .start p img {
   }
   html body main .main-contents .catalogue-container .catalogue-message .catalogue-title {
     margin-bottom: 1vw;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 900;
   }
   html body main .main-contents .catalogue-container .catalogue-message .catalogue-middle {
     margin-bottom: 1vw;
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: bold;
   }
   html body main .main-contents .catalogue-container .catalogue-message .catalogue-bottom {
@@ -978,8 +976,6 @@ html body .start p img {
   html body main .main-contents .catalogue-container .catalogue-message .catalogue-link {
     margin: 0 0 4vw auto;
     width: 60vw;
-    bottom: 0;
-    right: 0;
     font-size: 5vw;
     font-weight: bold;
     text-align: right;
@@ -987,7 +983,7 @@ html body .start p img {
   }
   html body main .main-contents .others {
     z-index: 2;
-    padding-top: 7vh;
+    padding-top: 10vh;
     width: 95vw;
     margin: 0 2.5vw;
     display: block;
@@ -1080,13 +1076,29 @@ html body .start p img {
     margin-top: calc(24vw - 25px);
   }
   html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar {
-    width: calc(95vw - 98px);
+    width: 71vw;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar a img {
+    width: 59vw;
+    position: absolute;
+    bottom: 0;
   }
   html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container {
-    width: 102px;
+    width: 36vw;
     display: flex;
     justify-content: space-between;
     /*両端揃えて均等配置*/
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a {
+    width: 10vw;
+    min-width: 30px;
+    padding-left: 2vw;
+  }
+  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a img {
+    width: 10vw;
+    min-width: 30px;
+    position: absolute;
+    bottom: 0;
   }
   html body main .asobi .asobi-main .asobi-container .space {
     width: 2vw;
@@ -1166,8 +1178,8 @@ html body .start p img {
     display: block;
     /*スマホで出現*/
     width: 100vw;
-    height: 7vh;
-    padding: 0 1vw;
+    height: 9vh;
+    padding: 0;
     background: #fff;
     z-index: 50;
     position: fixed;
@@ -1179,14 +1191,14 @@ html body .start p img {
     justify-content: space-between;
   }
   html body main .btm-nav ul li {
-    width: 24vw;
+    width: 25vw;
   }
   html body main .btm-nav ul li a {
-    width: 24vw;
-    padding: 4vw 3vw;
+    width: 25vw;
+    padding: 7vw 3vw;
   }
   html body main .btm-nav ul li a img {
-    width: 18vw;
+    width: 19vw;
   }
   html body .start {
     /*トップのアニメーション*/

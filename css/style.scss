@@ -1,7 +1,7 @@
 @charset "UFT-8";
 
 @mixin background {
-  background-image: url(../image/wakuzawa薄.png);
+  background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
   background-position: top 70vh left 47vw;
@@ -27,27 +27,6 @@
   font-size: 2px;
   font-weight: bold;
 }
-@mixin servuce-box-s {
-  width: 60vw;
-  height: 60vw;
-  opacity: 0.8;
-}
-@mixin service-title-s {
-  padding: 8vw 2vw 1vw 2vw;
-  font-size: 4.5vw;
-  font-weight: bold;
-}
-@mixin service-middle-s {
-  padding: 0 2vw 0 2vw;
-  font-size: 3vw;
-  font-weight: bold;
-}
-@mixin service-detail-s {
-  padding: 0 2vw 2vw 2vw;
-  font-size: 1vw;
-  font-weight: bold;
-}
-
 @mixin commodity-container {
   width: 76vw;
   height: 18.5vw;
@@ -109,7 +88,7 @@ html {
     }
 
     ul {
-      list-style-type: none; /*listに黒点つけない*/
+      list-style-type: none; /*listに-bl点つけない*/
     }
 
     display: flex;
@@ -679,6 +658,27 @@ html {
           }
           /*concept*/
 
+          @mixin servuce-box-s {
+            width: 60vw;
+            height: 60vw;
+            opacity: 0.8;
+          }
+          @mixin service-title-s {
+            padding: 8vw 2vw 1vw 2vw;
+            font-size: 4.5vw;
+            font-weight: bold;
+          }
+          @mixin service-middle-s {
+            padding: 0 2vw 0 2vw;
+            font-size: 3vw;
+            font-weight: bold;
+          }
+          @mixin service-detail-s {
+            padding: 0 2vw 2vw 2vw;
+            font-size: 2vw;
+            font-weight: bold;
+          }
+
           .service {
             @include side-space;
             padding-top: 10vh;
@@ -748,7 +748,8 @@ html {
           } //service
 
           .header-space {
-            height: 7vh;
+            padding-top: 10vh;
+            height: 1vh;
           }
 
           .package-top {
@@ -760,20 +761,31 @@ html {
           }
 
           @mixin commodity-container-s {
-            width: 100vw;
-            padding: 0 2.5vw;
+            width: 95vw;
+            margin: 0 2.5vw;
             height: 110vw;
             margin-bottom: 5vh;
             display: block;
           }
+          @mixin comodity-img-s {
+            margin: 0 2.5vw;
+            width: 90vw;
+            height: 50vw;
+          }
+          @mixin comodity-massage-s {
+            margin: 0 2.5vw;
+            width: 90vw;
+            height: 55vw;
+            position: relative;
+          }
           @mixin commodity-title-s {
             margin-bottom: 1vw;
-            font-size: 9vw;
+            font-size: 8vw;
             font-weight: 900;
           }
           @mixin commodity-middle-s {
             margin-bottom: 1vw;
-            font-size: 4vw;
+            font-size: 3.5vw;
             font-weight: bold;
           }
           @mixin commodity-bottom-s {
@@ -785,9 +797,6 @@ html {
           @mixin commodity-link-s {
             margin: 0 0 4vw auto;
             width: 60vw;
-            // position: ;
-            bottom: 0;
-            right: 0;
             font-size: 5vw;
             font-weight: bold;
             text-align: right;
@@ -798,17 +807,11 @@ html {
             /*menuR---------------------------------------*/
             @include commodity-container-s;
             img {
-              margin: 0 2.5vw;
-              width: 90vw;
-              height: 50vw;
-              z-index: 2;
+              @include comodity-img-s;
             }
 
             .menur-message {
-              margin: 0 2.5vw;
-              width: 90vw;
-              height: 55vw;
-              position: relative;
+              @include comodity-massage-s;
               .menur-title {
                 @include commodity-title-s;
               }
@@ -828,16 +831,11 @@ html {
             /*dressR-----------------------------------------*/
             @include commodity-container-s;
             img {
-              width: 90vw;
-              height: 50vw;
-              z-index: 2;
+              @include comodity-img-s;
             }
 
             .dressr-message {
-              margin: 0 2.5vw;
-              width: 90vw;
-              height: 55vw;
-              position: relative;
+              @include comodity-massage-s;
               .dressr-title {
                 @include commodity-title-s;
               }
@@ -855,23 +853,16 @@ html {
 
           .catalogue-container {
             /*catalogue----------------------------------------------*/
-            width: 95vw;
-            padding: 0 0 15vh 0;
-            height: 110vw;
-            margin: 0 2.5vw 10vh 2.5vw;
-            display: block;
+            @include commodity-container-s;
+            height: 120vw;
+            padding-bottom: 10vw;
             border-bottom: 1px solid #000;
             img {
-              width: 90vw;
-              height: 50vw;
-              z-index: 2;
+              @include comodity-img-s;
             }
 
             .catalogue-message {
-              margin: 0 2.5vw;
-              width: 90vw;
-              height: 55vw;
-              position: relative;
+              @include comodity-massage-s;
               .catalogue-title {
                 @include commodity-title-s;
               }
@@ -889,7 +880,7 @@ html {
 
           .others {
             z-index: 2;
-            padding-top: 7vh;
+            padding-top: 10vh;
             width: 95vw;
             margin: 0 2.5vw;
             display: block;
@@ -984,12 +975,30 @@ html {
                 .asobi-btn-container {
                   margin-top: calc(24vw - 25px);
                   .start-ar {
-                    width: calc(95vw - 98px);
+                    width: 71vw;
+                    a {
+                      img {
+                        width: 59vw;
+                        position: absolute;
+                        bottom: 0;
+                      }
+                    }
                   }
                   .sns-btn-container {
-                    width: 102px;
+                    width: 36vw;
                     display: flex;
                     justify-content: space-between; /*両端揃えて均等配置*/
+                    a {
+                      width: 10vw;
+                      min-width: 30px;
+                      padding-left: 2vw;
+                      img {
+                        width: 10vw;
+                        min-width: 30px;
+                        position: absolute;
+                        bottom: 0;
+                      }
+                    }
                   } //sns-btn-container
                 } //asobi-btn-container
               } //asobi-item
@@ -1081,8 +1090,8 @@ html {
         .btm-nav {
           display: block; /*スマホで出現*/
           width: 100vw;
-          height: 7vh;
-          padding: 0 1vw;
+          height: 9vh;
+          padding: 0;
           background: #fff;
           z-index: 50;
           position: fixed;
@@ -1092,12 +1101,12 @@ html {
             display: flex;
             justify-content: space-between;
             li {
-              width: 24vw;
+              width: 25vw;
               a {
-                width: 24vw;
-                padding: 4vw 3vw;
+                width: 25vw;
+                padding: 7vw 3vw;
                 img {
-                  width: 18vw;
+                  width: 19vw;
                 }
               }
             }

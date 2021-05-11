@@ -138,7 +138,7 @@ html body main .main-contents {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 76vh left 47.5vw;
+  background-position: top 74vh left 47.5vw;
   background-attachment: fixed;
 }
 
@@ -165,13 +165,6 @@ html body main .main-contents .concept-detail {
   font-size: 1.8vw;
   line-height: 2.5vw;
   color: gray;
-}
-
-html body main .main-contents .line-space {
-  margin: 0 4vw 0 0;
-  width: 76vw;
-  height: 5vh;
-  border-bottom: 1px solid gray;
 }
 
 html body main .main-contents .service {
@@ -455,7 +448,7 @@ html body main .main-contents .catalogue-container img {
 }
 
 html body main .main-contents .line-space {
-  margin-right: 4vw;
+  margin: 0;
   width: 76vw;
   height: 5vh;
   border-bottom: 1px solid gray;
@@ -472,12 +465,14 @@ html body main .main-contents .others .sizear {
 }
 
 html body main .main-contents .others .sizear .sizear-title {
+  margin-bottom: 0.5vw;
   font-size: 3.3vw;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 html body main .main-contents .others .sizear .sizear-middle {
-  font-size: 2.5vw;
+  margin-bottom: 0.5vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
@@ -486,12 +481,18 @@ html body main .main-contents .others .sizear .sizear-middle span {
 }
 
 html body main .main-contents .others .sizear .sizear-bottom {
-  font-size: 1.5vw;
+  margin-bottom: 0.5vw;
+  font-size: 1.2vw;
+  font-weight: bold;
   color: gray;
 }
 
 html body main .main-contents .others .sizear img {
   z-index: 2;
+}
+
+html body main .main-contents .others .sizear .sizear-link {
+  display: none;
 }
 
 html body main .main-contents .others .character {
@@ -525,7 +526,25 @@ html body main .main-contents .others .character .character-container .wagyu .wa
   width: 30vw;
   font-size: 2.3vw;
   font-weight: bold;
-  border-bottom: 1px solid #000;
+  width: 30vw;
+  font-size: 2.3vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 6px;
+  background-color: #06c755;
+  cursor: pointer;
+}
+
+html body main .main-contents .others .character .character-container .wagyu .wagyu-link:hover {
+  opacity: 1;
+}
+
+html body main .main-contents .others .character .character-container .wagyu .wagyu-link:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 html body main .main-contents .others .character .character-container .nanichu {
@@ -545,7 +564,25 @@ html body main .main-contents .others .character .character-container .nanichu .
   width: 30vw;
   font-size: 2.3vw;
   font-weight: bold;
-  border-bottom: 1px solid #000;
+  width: 30vw;
+  font-size: 2.3vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 6px;
+  background-color: #06c755;
+  cursor: pointer;
+}
+
+html body main .main-contents .others .character .character-container .nanichu .nanichu-link:hover {
+  opacity: 1;
+}
+
+html body main .main-contents .others .character .character-container .nanichu .nanichu-link:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 html body main .line-space {
@@ -559,7 +596,7 @@ html body main .contact {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 76vh left 47.5vw;
+  background-position: top 74vh left 47.5vw;
   background-attachment: fixed;
   margin: 15vh auto 10vh 20vw;
   padding-top: 25vh;
@@ -703,16 +740,16 @@ html body .start p img {
     /*concept*/
     margin-left: 5vw;
     margin-right: 5vw;
-    padding-top: 10vh;
+    padding-top: 20vh;
     font-size: 12vw;
     line-height: 14vw;
   }
   html body main .main-contents .concept-detail {
     margin-left: 5vw;
     margin-right: 5vw;
-    padding-bottom: 18vh;
+    padding-bottom: 15vh;
     margin-top: 10vh;
-    margin-bottom: 8vh;
+    margin-bottom: 0;
     font-size: 4vw;
     line-height: 5vw;
     border-bottom: none;
@@ -729,6 +766,7 @@ html body .start p img {
     padding-top: 10vh;
     height: 120vh;
     width: 90vw;
+    border: none;
   }
   html body main .main-contents .service .service-top {
     display: block;
@@ -759,7 +797,7 @@ html body .start p img {
   }
   html body main .main-contents .service .produce-box .produce-detail {
     padding: 0 1vw 2vw 1vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #fff;
   }
@@ -786,7 +824,7 @@ html body .start p img {
   }
   html body main .main-contents .service .design-box .design-detail {
     padding: 0 1vw 2vw 1vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     color: #fff;
   }
@@ -811,12 +849,11 @@ html body .start p img {
   }
   html body main .main-contents .service .planning-box .planning-detail {
     padding: 0 1vw 2vw 1vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
   }
   html body main .main-contents .header-space {
-    padding-top: 10vh;
-    height: 1vh;
+    display: none;
   }
   html body main .main-contents .package-top {
     display: block;
@@ -965,6 +1002,9 @@ html body .start p img {
     text-align: right;
     border-bottom: 1px solid #000;
   }
+  html body main .main-contents .line-space {
+    border: none;
+  }
   html body main .main-contents .others {
     z-index: 2;
     padding-top: 10vh;
@@ -992,6 +1032,16 @@ html body .start p img {
     z-index: 2;
     width: 90vw;
   }
+  html body main .main-contents .others .sizear .sizear-link {
+    display: block;
+    margin: 0 0 4vw auto;
+    width: 60vw;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #000;
+    margin-top: 5vh;
+  }
   html body main .main-contents .others .character {
     width: 90vw;
     margin: 0 2.5vw;
@@ -1013,6 +1063,8 @@ html body .start p img {
   html body main .main-contents .others .character .character-container .wagyu .wagyu-link {
     padding-top: 2vh;
     width: 44vw;
+    height: 10vw;
+    line-height: 4vw;
     font-size: 4vw;
     font-weight: bold;
   }
@@ -1026,8 +1078,13 @@ html body .start p img {
   html body main .main-contents .others .character .character-container .nanichu .nanichu-link {
     padding-top: 2vh;
     width: 44vw;
+    height: 10vw;
+    line-height: 4vw;
     font-size: 4vw;
     font-weight: bold;
+  }
+  html body main .line-space {
+    border: none;
   }
   html body main .contact {
     background: none;
@@ -1050,7 +1107,7 @@ html body .start p img {
   }
   html body main .contact .campany-info {
     width: 90vw;
-    text-align: right;
+    text-align: left;
     font-size: 4vw;
   }
   html body main .contact .campany-info .newline {
@@ -1058,15 +1115,15 @@ html body .start p img {
   }
   html body main .footer {
     position: static;
-    margin: 2vh 2.5vw 0 2.5vw;
+    margin: 2vh 2.5vw 2vh 2.5vw;
     padding-bottom: 12vh;
-    height: 8vh;
+    height: 4vh;
     width: 95vw;
     text-align: right;
     /*右寄せ*/
-    line-height: 8vh;
+    line-height: 4vh;
     /*中段寄せ*/
-    border-top: 1px solid gray;
+    border-top: none;
   }
   html body main .smf-contact-btn {
     display: block;
@@ -1122,7 +1179,8 @@ html body .start p img {
   }
   html body main .btm-nav ul li a {
     width: 25vw;
-    padding: 7vw 3vw;
+    padding: 5vw 3vw 9vw 3vw;
+    border: 1px solid gray;
   }
   html body main .btm-nav ul li a img {
     width: 19vw;

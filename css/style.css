@@ -138,7 +138,7 @@ html body main .main-contents {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 74vh left 47.5vw;
+  background-position: top 66vh left 47.5vw;
   background-attachment: fixed;
 }
 
@@ -596,7 +596,7 @@ html body main .contact {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 74vh left 47.5vw;
+  background-position: top 66vh left 47.5vw;
   background-attachment: fixed;
   margin: 15vh auto 10vh 20vw;
   padding-top: 25vh;
@@ -764,7 +764,7 @@ html body .start p img {
     margin-left: 5vw;
     margin-right: 5vw;
     padding-top: 10vh;
-    height: 120vh;
+    height: 110vh;
     width: 90vw;
     border: none;
   }
@@ -853,7 +853,7 @@ html body .start p img {
     font-weight: bold;
   }
   html body main .main-contents .header-space {
-    display: none;
+    height: 9vh;
   }
   html body main .main-contents .package-top {
     display: block;
@@ -863,6 +863,7 @@ html body .start p img {
     border-bottom: 1px solid #000;
   }
   html body main .main-contents .package-message {
+    margin-right: 5vw;
     width: 80vw;
     height: 8vw;
     line-height: 8vw;

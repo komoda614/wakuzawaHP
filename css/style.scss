@@ -4,59 +4,8 @@
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 70vh left 47vw;
+  background-position: top 76vh left 47.5vw;
   background-attachment: fixed;
-}
-@mixin servuce-box {
-  width: 25vw;
-  height: 25vw;
-  opacity: 0.8;
-}
-@mixin service-title {
-  padding: 0 0.1vw 0.3vw 4vw;
-  font-size: 2.5vw;
-  font-weight: bold;
-}
-@mixin service-middle {
-  padding: 0 0.1vw 0 4vw;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-@mixin service-detail {
-  padding: 0 0.1vw 0.3vw 4vw;
-  font-size: 2px;
-  font-weight: bold;
-}
-@mixin commodity-container {
-  width: 76vw;
-  height: 18.5vw;
-  margin-bottom: 25vh;
-  display: flex;
-  justify-content: space-between;
-}
-@mixin commodity-title {
-  margin-bottom: 0.5vw;
-  font-size: 3.3vw;
-  font-weight: bold;
-}
-@mixin commodity-middle {
-  margin-bottom: 0.5vw;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-@mixin commodity-bottom {
-  font-size: 1.2vw;
-  color: $font-color;
-}
-@mixin commodity-link {
-  width: 25vw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 2.3vw;
-  font-weight: bold;
-  text-align: right;
-  border-bottom: 1px solid #707070;
 }
 $font-color: gray;
 $border-set: 1px solid gray;
@@ -171,7 +120,7 @@ html {
     main {
       .top-box {
         height: 7vh;
-        width: 82.5vw;
+        width: 79vw;
         background-color: #fff;
         position: fixed;
         top: 0;
@@ -194,7 +143,6 @@ html {
         }
 
         .concept-title {
-          /*concept*/
           margin: 0 auto 18vh 0;
           padding-top: 10vh;
           font-size: 5.5vw;
@@ -213,11 +161,38 @@ html {
           font-size: 1.8vw;
           line-height: 2.5vw;
           color: $font-color;
+        }
+        .line-space {
+          margin: 0 4vw 0 0;
+          width: 76vw;
+          height: 5vh;
           border-bottom: $border-set;
         }
-        /*concept*/
+
+        @mixin servuce-box {
+          width: 25vw;
+          height: 25vw;
+          opacity: 0.8;
+        }
+        @mixin service-title {
+          padding: 3vw 1vw 0.3vw 4vw;
+          font-size: 3vw;
+          font-weight: bold;
+        }
+        @mixin service-middle {
+          padding: 0 1vw 0 4vw;
+          font-size: 1.5vw;
+          font-weight: bold;
+        }
+        @mixin service-detail {
+          padding: 0 1vw 1vw 4vw;
+          font-size: 2px;
+          font-weight: bold;
+        }
 
         .service {
+          margin-right: 4vw;
+          width: 76vw;
           height: 44vw;
           border-bottom: 1px solid gray;
           .service-top {
@@ -272,9 +247,15 @@ html {
 
             .planning-title {
               @include service-title;
+              font-weight: 900;
+            }
+            .planning-middle {
+              @include service-middle;
+              font-weight: 900;
             }
             .planning-detail {
               @include service-detail;
+              font-weight: 900;
             }
           } //planning-box
         } //service
@@ -282,9 +263,59 @@ html {
         .header-space {
           height: 7vh;
         }
+
+        .package-message {
+          margin: 0 2vw 8vh auto;
+          padding: 0 0 0 7vw;
+          width: 66vw;
+          height: 5vw;
+          line-height: 5vw;
+          background: #000;
+          color: #fff;
+          font-size: 4vw;
+          font-weight: bold;
+          span {
+            font-size: 2.5vw;
+            margin-left: 2vw;
+          }
+        }
+
         .package-top {
           display: none;
         }
+
+        @mixin commodity-container {
+          width: 76vw;
+          height: 18.5vw;
+          margin-bottom: 20vh;
+          display: flex;
+          justify-content: space-between;
+        }
+        @mixin commodity-title {
+          margin-bottom: 0.5vw;
+          font-size: 3.3vw;
+          font-weight: bold;
+        }
+        @mixin commodity-middle {
+          margin-bottom: 0.5vw;
+          font-size: 1.5vw;
+          font-weight: bold;
+        }
+        @mixin commodity-bottom {
+          font-size: 1.2vw;
+          color: $font-color;
+        }
+        @mixin commodity-link {
+          width: 25vw;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          font-size: 2.3vw;
+          font-weight: bold;
+          text-align: right;
+          border-bottom: 1px solid #707070;
+        }
+
         .menur-container {
           /*menuR---------------------------------------*/
           @include commodity-container;
@@ -371,24 +402,40 @@ html {
           }
         } //catalogue-container
 
+        .line-space {
+          margin-right: 4vw;
+          width: 76vw;
+          height: 5vh;
+          border-bottom: $border-set;
+        }
+
         .others {
           z-index: 2;
           padding-top: 7vh;
           width: 76vw;
-          display: flex;
-          justify-content: space-between; /*両端揃えて均等配置*/
           .sizear {
-            width: 36vw;
+            width: 76vw;
             .sizear-title {
               font-size: 3.3vw;
+              font-weight: 900;
+            }
+            .sizear-middle {
+              font-size: 2.5vw;
               font-weight: bold;
+              span {
+                margin-left: 0.5vw;
+              }
+            }
+            .sizear-bottom {
+              font-size: 1.5vw;
+              color: $font-color;
             }
             img {
               z-index: 2;
             }
           }
           .character {
-            width: 36vw;
+            width: 76vw;
             padding-top: 16vh;
             .character-title {
               font-size: 3.3vw;
@@ -397,7 +444,7 @@ html {
             .character-container {
               display: flex;
               .wagyu {
-                width: 18vw;
+                width: 38vw;
                 img {
                   z-index: 2;
                 }
@@ -406,13 +453,14 @@ html {
                   font-weight: bold;
                 }
                 .wagyu-link {
+                  width: 30vw;
                   font-size: 2.3vw;
                   font-weight: bold;
+                  border-bottom: 1px solid #000;
                 }
               } //wagyu
               .nanichu {
-                width: 18vw;
-                padding-top: 5.6vh;
+                width: 38vw;
                 img {
                   z-index: 22;
                 }
@@ -421,8 +469,10 @@ html {
                   font-weight: bold;
                 }
                 .nanichu-link {
+                  width: 30vw;
                   font-size: 2.3vw;
                   font-weight: bold;
+                  border-bottom: 1px solid #000;
                 }
               } //nanichu
             } //character-container
@@ -430,86 +480,95 @@ html {
         } //others
       } //main-contents
 
-      .asobi {
-        /*wakuzawa-no-asobi-------------------------------------*/
-        margin: 0 0 6vh 18vw;
-        padding: 4vh 0 0 2vw;
-        width: 80vw;
-        background-color: #000;
-        & * {
-          color: #fff;
-          font-weight: bold;
-        }
-        .asobi-logo {
-          width: 40vw;
-          background: #000;
-        }
-        .asobi-main {
-          background-image: url(../image/asobi/space.png);
-          background-size: cover;
-          background-attachment: fixed; /*背景固定*/
-          .asobi-detail {
-            margin: 5vh 0;
-            padding-top: 3vh;
-            color: #fff;
-            font-size: 1.5vw;
-            font-weight: bold;
-          } //asobi-detail
-          .asobi-container {
-            display: flex;
-            flex-wrap: wrap;
-            .asobi-item {
-              width: 24vw;
-              margin-bottom: 4vh;
-              iframe {
-                width: 24vw;
-                height: 13.5vw;
-              }
-              .asobi-title-container {
-                font-size: 1.5vw;
-                display: flex;
-                justify-content: space-between; /*両端揃えて均等配置*/
-              }
-              .asobi-btn-container {
-                margin-top: calc(6vw - 24px);
-                display: flex;
-                justify-content: space-between; /*両端揃えて均等配置*/
-                .start-ar {
-                  width: calc(24vw - 96px);
-                  position: relative;
-                  img {
-                    position: absolute;
-                    bottom: 0;
-                  }
-                }
-                .sns-btn-container {
-                  width: 96px;
-                  display: flex;
-                  align-items: flex-end; /*snsボタンは下寄せ*/
-                  justify-content: end; /*右寄せ*/
-                  a {
-                    width: 30px;
-                    padding-left: 2px;
-                    position: relative;
-                    img {
-                      position: absolute;
-                      bottom: 0;
-                    }
-                  }
-                } //sns-btn-container
-              } //asobi-btn-container
-            } //asobi-item
-            .space {
-              width: 2vw;
-            }
-          } //asobi-container
-        } //asobi-main
-      } //asobi
+      .line-space {
+        margin: 0 auto 0 20vw;
+        width: 76vw;
+        height: 5vh;
+        border-bottom: $border-set;
+      }
+
+      // .asobi {
+      //   /*wakuzawa-no-asobi-------------------------------------*/
+      //   margin: 0 0 6vh 18vw;
+      //   padding: 4vh 0 0 2vw;
+      //   width: 80vw;
+      //   background-color: #000;
+      //   position: relative;
+      //   z-index: 9500;
+      //   & * {
+      //     color: #fff;
+      //     font-weight: bold;
+      //   }
+      //   .asobi-logo {
+      //     width: 40vw;
+      //     background: #000;
+      //   }
+      //   .asobi-main {
+      //     background-image: url(../image/asobi/space.png);
+      //     background-size: cover;
+      //     background-attachment: fixed; /*背景固定*/
+      //     .asobi-detail {
+      //       margin: 5vh 0;
+      //       padding-top: 3vh;
+      //       color: #fff;
+      //       font-size: 1.5vw;
+      //       font-weight: bold;
+      //     } //asobi-detail
+      //     .asobi-container {
+      //       display: flex;
+      //       flex-wrap: wrap;
+      //       .asobi-item {
+      //         width: 24vw;
+      //         margin-bottom: 4vh;
+      //         iframe {
+      //           width: 24vw;
+      //           height: 13.5vw;
+      //         }
+      //         .asobi-title-container {
+      //           font-size: 1.5vw;
+      //           display: flex;
+      //           justify-content: space-between; /*両端揃えて均等配置*/
+      //         }
+      //         .asobi-btn-container {
+      //           margin-top: calc(6vw - 24px);
+      //           display: flex;
+      //           justify-content: space-between; /*両端揃えて均等配置*/
+      //           .start-ar {
+      //             width: calc(24vw - 96px);
+      //             position: relative;
+      //             img {
+      //               position: absolute;
+      //               bottom: 0;
+      //             }
+      //           }
+      //           .sns-btn-container {
+      //             width: 96px;
+      //             display: flex;
+      //             align-items: flex-end; /*snsボタンは下寄せ*/
+      //             justify-content: end; /*右寄せ*/
+      //             a {
+      //               width: 30px;
+      //               padding-left: 2px;
+      //               position: relative;
+      //               img {
+      //                 position: absolute;
+      //                 bottom: 0;
+      //               }
+      //             }
+      //           } //sns-btn-container
+      //         } //asobi-btn-container
+      //       } //asobi-item
+      //       .space {
+      //         width: 2vw;
+      //       }
+      //     } //asobi-container
+      //   } //asobi-main
+      // } //asobi
 
       .contact {
         @include background;
-        margin: 0 auto 2vh 20vw;
-        padding-top: 20vh;
+        margin: 15vh auto 10vh 20vw;
+        padding-top: 25vh;
 
         .contact-btn {
           margin-bottom: 3vh;
@@ -551,19 +610,25 @@ html {
           text-align: right;
           font-size: 1vw;
           color: $font-color;
+          span {
+            margin-right: 0.5vw;
+          }
           .newline {
             display: none;
           }
         }
       } //contact
       .footer {
-        margin-left: 20vw;
         height: 8vh;
         width: 76vw;
         background-color: #fff;
         text-align: right; /*右寄せ*/
         line-height: 6vh; /*中段寄せ*/
         border-top: 1px solid gray;
+        position: fixed;
+        top: 92vh;
+        left: 20vw;
+        z-index: 9000;
       } //footer
       .smf-contact-btn {
         display: none;
@@ -646,7 +711,7 @@ html {
             margin-top: 10vh;
             margin-bottom: 8vh;
             font-size: 4vw;
-            line-height: 4vw;
+            line-height: 5vw;
             border-bottom: none;
           }
 
@@ -664,18 +729,18 @@ html {
             opacity: 0.8;
           }
           @mixin service-title-s {
-            padding: 8vw 2vw 1vw 2vw;
+            padding: 8vw 1vw 1vw 1vw;
             font-size: 4.5vw;
             font-weight: bold;
           }
           @mixin service-middle-s {
-            padding: 0 2vw 0 2vw;
+            padding: 0 1vw 0 1vw;
             font-size: 3vw;
             font-weight: bold;
           }
           @mixin service-detail-s {
-            padding: 0 2vw 2vw 2vw;
-            font-size: 2vw;
+            padding: 0 1vw 2vw 1vw;
+            font-size: 1vw;
             font-weight: bold;
           }
 
@@ -741,6 +806,9 @@ html {
               .planning-title {
                 @include service-title-s;
               }
+              .planning-middle {
+                @include service-middle-s;
+              }
               .planning-detail {
                 @include service-detail-s;
               }
@@ -758,6 +826,16 @@ html {
             padding: 1vh 10vw 1vh 0;
             height: 5vh;
             border-bottom: 1px solid #000;
+          }
+
+          .package-message {
+            width: 80vw;
+            height: 8vw;
+            line-height: 8vw;
+            font-size: 5vw;
+            span {
+              font-size: 3vw;
+            }
           }
 
           @mixin commodity-container-s {
@@ -856,7 +934,7 @@ html {
             @include commodity-container-s;
             height: 120vw;
             padding-bottom: 10vw;
-            border-bottom: 1px solid #000;
+            // border-bottom: 1px solid #000;
             img {
               @include comodity-img-s;
             }
@@ -891,6 +969,14 @@ html {
                 font-size: 9vw;
                 font-weight: 900;
               }
+              .sizear-middle {
+                font-size: 5vw;
+                font-weight: bold;
+              }
+              .sizear-bottom {
+                font-size: 3vw;
+                font-weight: bold;
+              }
               img {
                 z-index: 2;
                 width: 90vw;
@@ -911,12 +997,14 @@ html {
                   img {
                     z-index: 22;
                   }
-                  .wagyu-name {
-                    font-size: 5vw;
-                    font-weight: bold;
-                  }
+                  // .wagyu-name {
+                  //   font-size: 5vw;
+                  //   font-weight: bold;
+                  // }
                   .wagyu-link {
-                    font-size: 5vw;
+                    padding-top: 2vh;
+                    width: 44vw;
+                    font-size: 4vw;
                     font-weight: bold;
                   }
                 } //wagyu
@@ -926,12 +1014,14 @@ html {
                   img {
                     z-index: 22;
                   }
-                  .nanichu-name {
-                    font-size: 5vw;
-                    font-weight: bold;
-                  }
+                  // .nanichu-name {
+                  //   font-size: 5vw;
+                  //   font-weight: bold;
+                  // }
                   .nanichu-link {
-                    font-size: 5vw;
+                    padding-top: 2vh;
+                    width: 44vw;
+                    font-size: 4vw;
                     font-weight: bold;
                   }
                 } //nanichu
@@ -940,74 +1030,73 @@ html {
           } //others
         } //main-contents
 
-        .asobi {
-          /*wakuzawa-no-asobi-------------------------------------*/
-          margin: 10vh 0 0 0;
-          padding: 4vh 2.5vw 0 2.5vw;
-          width: 100vw;
-          position: relative;
+        // .asobi {
+        //   margin: 10vh 0 0 0;
+        //   padding: 4vh 2.5vw 0 2.5vw;
+        //   width: 100vw;
+        //   position: relative;
 
-          z-index: 500;
-          .asobi-logo {
-            width: 95vw;
-            margin: 2vh 0;
-          }
-          .asobi-main {
-            .asobi-detail {
-              margin: 5vh 0;
-              padding-top: 3vh;
-              color: #fff;
-              font-size: 4vw;
-              font-weight: bold;
-            } //asobi-detail
-            .asobi-container {
-              .asobi-item {
-                width: 95vw;
-                margin-bottom: 4vh;
-                margin-top: 4vh;
-                iframe {
-                  width: 95vw;
-                  height: 53.4vw;
-                }
-                .asobi-title-container {
-                  font-size: 8vw;
-                }
-                .asobi-btn-container {
-                  margin-top: calc(24vw - 25px);
-                  .start-ar {
-                    width: 71vw;
-                    a {
-                      img {
-                        width: 59vw;
-                        position: absolute;
-                        bottom: 0;
-                      }
-                    }
-                  }
-                  .sns-btn-container {
-                    width: 36vw;
-                    display: flex;
-                    justify-content: space-between; /*両端揃えて均等配置*/
-                    a {
-                      width: 10vw;
-                      min-width: 30px;
-                      padding-left: 2vw;
-                      img {
-                        width: 10vw;
-                        min-width: 30px;
-                        position: absolute;
-                        bottom: 0;
-                      }
-                    }
-                  } //sns-btn-container
-                } //asobi-btn-container
-              } //asobi-item
-              .space {
-                width: 2vw;
-              }
-            } //asobi-container
-          } //asobi-main
-        } //asobi
+        //   z-index: 500;
+        //   .asobi-logo {
+        //     width: 95vw;
+        //     margin: 2vh 0;
+        //   }
+        //   .asobi-main {
+        //     .asobi-detail {
+        //       margin: 5vh 0;
+        //       padding-top: 3vh;
+        //       color: #fff;
+        //       font-size: 4vw;
+        //       font-weight: bold;
+        //     } //asobi-detail
+        //     .asobi-container {
+        //       .asobi-item {
+        //         width: 95vw;
+        //         margin-bottom: 4vh;
+        //         margin-top: 4vh;
+        //         iframe {
+        //           width: 95vw;
+        //           height: 53.4vw;
+        //         }
+        //         .asobi-title-container {
+        //           font-size: 8vw;
+        //         }
+        //         .asobi-btn-container {
+        //           margin-top: calc(24vw - 25px);
+        //           .start-ar {
+        //             width: 71vw;
+        //             a {
+        //               img {
+        //                 width: 59vw;
+        //                 position: absolute;
+        //                 bottom: 0;
+        //               }
+        //             }
+        //           }
+        //           .sns-btn-container {
+        //             width: 36vw;
+        //             display: flex;
+        //             justify-content: space-between; /*両端揃えて均等配置*/
+        //             a {
+        //               width: 10vw;
+        //               min-width: 30px;
+        //               padding-left: 2vw;
+        //               img {
+        //                 width: 10vw;
+        //                 min-width: 30px;
+        //                 position: absolute;
+        //                 bottom: 0;
+        //               }
+        //             }
+        //           } //sns-btn-container
+        //         } //asobi-btn-container
+        //       } //asobi-item
+        //       .space {
+        //         width: 2vw;
+        //       }
+        //     } //asobi-container
+        //   } //asobi-main
+        // } //asobi
 
         .contact {
           background: none;
@@ -1027,7 +1116,7 @@ html {
           } //contact-btn
           .contact-message {
             margin-bottom: 30vh;
-            font-size: 4vw;
+            font-size: 5vw;
           }
           .campany-info {
             width: 90vw;
@@ -1040,6 +1129,7 @@ html {
         } //contact
 
         .footer {
+          position: static;
           margin: 2vh 2.5vw 0 2.5vw;
           padding-bottom: 12vh;
           height: 8vh;

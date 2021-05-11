@@ -118,7 +118,7 @@ html body header .btn:hover div:nth-of-type(2) {
 
 html body main .top-box {
   height: 7vh;
-  width: 82.5vw;
+  width: 79vw;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -138,9 +138,8 @@ html body main .main-contents {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 70vh left 47vw;
+  background-position: top 76vh left 47.5vw;
   background-attachment: fixed;
-  /*concept*/
 }
 
 html body main .main-contents .home-logo {
@@ -148,7 +147,6 @@ html body main .main-contents .home-logo {
 }
 
 html body main .main-contents .concept-title {
-  /*concept*/
   margin: 0 auto 18vh 0;
   padding-top: 10vh;
   font-size: 5.5vw;
@@ -167,10 +165,18 @@ html body main .main-contents .concept-detail {
   font-size: 1.8vw;
   line-height: 2.5vw;
   color: gray;
+}
+
+html body main .main-contents .line-space {
+  margin: 0 4vw 0 0;
+  width: 76vw;
+  height: 5vh;
   border-bottom: 1px solid gray;
 }
 
 html body main .main-contents .service {
+  margin-right: 4vw;
+  width: 76vw;
   height: 44vw;
   border-bottom: 1px solid gray;
 }
@@ -190,21 +196,21 @@ html body main .main-contents .service .produce-box {
 }
 
 html body main .main-contents .service .produce-box .produce-title {
-  padding: 0 0.1vw 0.3vw 4vw;
-  font-size: 2.5vw;
+  padding: 3vw 1vw 0.3vw 4vw;
+  font-size: 3vw;
   font-weight: bold;
   color: #fff;
 }
 
 html body main .main-contents .service .produce-box .produce-middle {
-  padding: 0 0.1vw 0 4vw;
+  padding: 0 1vw 0 4vw;
   font-size: 1.5vw;
   font-weight: bold;
   color: #fff;
 }
 
 html body main .main-contents .service .produce-box .produce-detail {
-  padding: 0 0.1vw 0.3vw 4vw;
+  padding: 0 1vw 1vw 4vw;
   font-size: 2px;
   font-weight: bold;
   color: #fff;
@@ -221,21 +227,21 @@ html body main .main-contents .service .design-box {
 }
 
 html body main .main-contents .service .design-box .design-title {
-  padding: 0 0.1vw 0.3vw 4vw;
-  font-size: 2.5vw;
+  padding: 3vw 1vw 0.3vw 4vw;
+  font-size: 3vw;
   font-weight: bold;
   color: #fff;
 }
 
 html body main .main-contents .service .design-box .design-middle {
-  padding: 0 0.1vw 0 4vw;
+  padding: 0 1vw 0 4vw;
   font-size: 1.5vw;
   font-weight: bold;
   color: #fff;
 }
 
 html body main .main-contents .service .design-box .design-detail {
-  padding: 0 0.1vw 0.3vw 4vw;
+  padding: 0 1vw 1vw 4vw;
   font-size: 2px;
   font-weight: bold;
   color: #fff;
@@ -252,19 +258,45 @@ html body main .main-contents .service .planning-box {
 }
 
 html body main .main-contents .service .planning-box .planning-title {
-  padding: 0 0.1vw 0.3vw 4vw;
-  font-size: 2.5vw;
+  padding: 3vw 1vw 0.3vw 4vw;
+  font-size: 3vw;
   font-weight: bold;
+  font-weight: 900;
+}
+
+html body main .main-contents .service .planning-box .planning-middle {
+  padding: 0 1vw 0 4vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-weight: 900;
 }
 
 html body main .main-contents .service .planning-box .planning-detail {
-  padding: 0 0.1vw 0.3vw 4vw;
+  padding: 0 1vw 1vw 4vw;
   font-size: 2px;
   font-weight: bold;
+  font-weight: 900;
 }
 
 html body main .main-contents .header-space {
   height: 7vh;
+}
+
+html body main .main-contents .package-message {
+  margin: 0 2vw 8vh auto;
+  padding: 0 0 0 7vw;
+  width: 66vw;
+  height: 5vw;
+  line-height: 5vw;
+  background: #000;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+html body main .main-contents .package-message span {
+  font-size: 2.5vw;
+  margin-left: 2vw;
 }
 
 html body main .main-contents .package-top {
@@ -275,7 +307,7 @@ html body main .main-contents .menur-container {
   /*menuR---------------------------------------*/
   width: 76vw;
   height: 18.5vw;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -326,7 +358,7 @@ html body main .main-contents .dressr-container {
   /*dressR-----------------------------------------*/
   width: 76vw;
   height: 18.5vw;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: space-between;
 }
@@ -375,7 +407,7 @@ html body main .main-contents .catalogue-container {
   /*catalogue----------------------------------------------*/
   width: 76vw;
   height: 18.5vw;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -422,22 +454,40 @@ html body main .main-contents .catalogue-container img {
   z-index: 2;
 }
 
+html body main .main-contents .line-space {
+  margin-right: 4vw;
+  width: 76vw;
+  height: 5vh;
+  border-bottom: 1px solid gray;
+}
+
 html body main .main-contents .others {
   z-index: 2;
   padding-top: 7vh;
   width: 76vw;
-  display: flex;
-  justify-content: space-between;
-  /*両端揃えて均等配置*/
 }
 
 html body main .main-contents .others .sizear {
-  width: 36vw;
+  width: 76vw;
 }
 
 html body main .main-contents .others .sizear .sizear-title {
   font-size: 3.3vw;
+  font-weight: 900;
+}
+
+html body main .main-contents .others .sizear .sizear-middle {
+  font-size: 2.5vw;
   font-weight: bold;
+}
+
+html body main .main-contents .others .sizear .sizear-middle span {
+  margin-left: 0.5vw;
+}
+
+html body main .main-contents .others .sizear .sizear-bottom {
+  font-size: 1.5vw;
+  color: gray;
 }
 
 html body main .main-contents .others .sizear img {
@@ -445,7 +495,7 @@ html body main .main-contents .others .sizear img {
 }
 
 html body main .main-contents .others .character {
-  width: 36vw;
+  width: 76vw;
   padding-top: 16vh;
 }
 
@@ -459,7 +509,7 @@ html body main .main-contents .others .character .character-container {
 }
 
 html body main .main-contents .others .character .character-container .wagyu {
-  width: 18vw;
+  width: 38vw;
 }
 
 html body main .main-contents .others .character .character-container .wagyu img {
@@ -472,13 +522,14 @@ html body main .main-contents .others .character .character-container .wagyu .wa
 }
 
 html body main .main-contents .others .character .character-container .wagyu .wagyu-link {
+  width: 30vw;
   font-size: 2.3vw;
   font-weight: bold;
+  border-bottom: 1px solid #000;
 }
 
 html body main .main-contents .others .character .character-container .nanichu {
-  width: 18vw;
-  padding-top: 5.6vh;
+  width: 38vw;
 }
 
 html body main .main-contents .others .character .character-container .nanichu img {
@@ -491,114 +542,27 @@ html body main .main-contents .others .character .character-container .nanichu .
 }
 
 html body main .main-contents .others .character .character-container .nanichu .nanichu-link {
+  width: 30vw;
   font-size: 2.3vw;
   font-weight: bold;
+  border-bottom: 1px solid #000;
 }
 
-html body main .asobi {
-  /*wakuzawa-no-asobi-------------------------------------*/
-  margin: 0 0 6vh 18vw;
-  padding: 4vh 0 0 2vw;
-  width: 80vw;
-  background-color: #000;
-}
-
-html body main .asobi * {
-  color: #fff;
-  font-weight: bold;
-}
-
-html body main .asobi .asobi-logo {
-  width: 40vw;
-  background: #000;
-}
-
-html body main .asobi .asobi-main {
-  background-image: url(../image/asobi/space.png);
-  background-size: cover;
-  background-attachment: fixed;
-  /*背景固定*/
-}
-
-html body main .asobi .asobi-main .asobi-detail {
-  margin: 5vh 0;
-  padding-top: 3vh;
-  color: #fff;
-  font-size: 1.5vw;
-  font-weight: bold;
-}
-
-html body main .asobi .asobi-main .asobi-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item {
-  width: 24vw;
-  margin-bottom: 4vh;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item iframe {
-  width: 24vw;
-  height: 13.5vw;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-title-container {
-  font-size: 1.5vw;
-  display: flex;
-  justify-content: space-between;
-  /*両端揃えて均等配置*/
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container {
-  margin-top: calc(6vw - 24px);
-  display: flex;
-  justify-content: space-between;
-  /*両端揃えて均等配置*/
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar {
-  width: calc(24vw - 96px);
-  position: relative;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar img {
-  position: absolute;
-  bottom: 0;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container {
-  width: 96px;
-  display: flex;
-  align-items: flex-end;
-  /*snsボタンは下寄せ*/
-  justify-content: end;
-  /*右寄せ*/
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a {
-  width: 30px;
-  padding-left: 2px;
-  position: relative;
-}
-
-html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a img {
-  position: absolute;
-  bottom: 0;
-}
-
-html body main .asobi .asobi-main .asobi-container .space {
-  width: 2vw;
+html body main .line-space {
+  margin: 0 auto 0 20vw;
+  width: 76vw;
+  height: 5vh;
+  border-bottom: 1px solid gray;
 }
 
 html body main .contact {
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 70vh left 47vw;
+  background-position: top 76vh left 47.5vw;
   background-attachment: fixed;
-  margin: 0 auto 2vh 20vw;
-  padding-top: 20vh;
+  margin: 15vh auto 10vh 20vw;
+  padding-top: 25vh;
 }
 
 html body main .contact .contact-btn {
@@ -645,12 +609,15 @@ html body main .contact .campany-info {
   color: gray;
 }
 
+html body main .contact .campany-info span {
+  margin-right: 0.5vw;
+}
+
 html body main .contact .campany-info .newline {
   display: none;
 }
 
 html body main .footer {
-  margin-left: 20vw;
   height: 8vh;
   width: 76vw;
   background-color: #fff;
@@ -659,6 +626,10 @@ html body main .footer {
   line-height: 6vh;
   /*中段寄せ*/
   border-top: 1px solid gray;
+  position: fixed;
+  top: 92vh;
+  left: 20vw;
+  z-index: 9000;
 }
 
 html body main .smf-contact-btn {
@@ -743,7 +714,7 @@ html body .start p img {
     margin-top: 10vh;
     margin-bottom: 8vh;
     font-size: 4vw;
-    line-height: 4vw;
+    line-height: 5vw;
     border-bottom: none;
   }
   html body main .main-contents .line-space {
@@ -775,20 +746,20 @@ html body .start p img {
     left: 28.3vw;
   }
   html body main .main-contents .service .produce-box .produce-title {
-    padding: 8vw 2vw 1vw 2vw;
+    padding: 8vw 1vw 1vw 1vw;
     font-size: 4.5vw;
     font-weight: bold;
     color: #fff;
   }
   html body main .main-contents .service .produce-box .produce-middle {
-    padding: 0 2vw 0 2vw;
+    padding: 0 1vw 0 1vw;
     font-size: 3vw;
     font-weight: bold;
     color: #fff;
   }
   html body main .main-contents .service .produce-box .produce-detail {
-    padding: 0 2vw 2vw 2vw;
-    font-size: 2vw;
+    padding: 0 1vw 2vw 1vw;
+    font-size: 1vw;
     font-weight: bold;
     color: #fff;
   }
@@ -802,20 +773,20 @@ html body .start p img {
     left: 14.1vw;
   }
   html body main .main-contents .service .design-box .design-title {
-    padding: 8vw 2vw 1vw 2vw;
+    padding: 8vw 1vw 1vw 1vw;
     font-size: 4.5vw;
     font-weight: bold;
     color: #fff;
   }
   html body main .main-contents .service .design-box .design-middle {
-    padding: 0 2vw 0 2vw;
+    padding: 0 1vw 0 1vw;
     font-size: 3vw;
     font-weight: bold;
     color: #fff;
   }
   html body main .main-contents .service .design-box .design-detail {
-    padding: 0 2vw 2vw 2vw;
-    font-size: 2vw;
+    padding: 0 1vw 2vw 1vw;
+    font-size: 1vw;
     font-weight: bold;
     color: #fff;
   }
@@ -829,13 +800,18 @@ html body .start p img {
     left: 0;
   }
   html body main .main-contents .service .planning-box .planning-title {
-    padding: 8vw 2vw 1vw 2vw;
+    padding: 8vw 1vw 1vw 1vw;
     font-size: 4.5vw;
     font-weight: bold;
   }
+  html body main .main-contents .service .planning-box .planning-middle {
+    padding: 0 1vw 0 1vw;
+    font-size: 3vw;
+    font-weight: bold;
+  }
   html body main .main-contents .service .planning-box .planning-detail {
-    padding: 0 2vw 2vw 2vw;
-    font-size: 2vw;
+    padding: 0 1vw 2vw 1vw;
+    font-size: 1vw;
     font-weight: bold;
   }
   html body main .main-contents .header-space {
@@ -848,6 +824,15 @@ html body .start p img {
     padding: 1vh 10vw 1vh 0;
     height: 5vh;
     border-bottom: 1px solid #000;
+  }
+  html body main .main-contents .package-message {
+    width: 80vw;
+    height: 8vw;
+    line-height: 8vw;
+    font-size: 5vw;
+  }
+  html body main .main-contents .package-message span {
+    font-size: 3vw;
   }
   html body main .main-contents .menur-container {
     /*menuR---------------------------------------*/
@@ -944,7 +929,6 @@ html body .start p img {
     display: block;
     height: 120vw;
     padding-bottom: 10vw;
-    border-bottom: 1px solid #000;
   }
   html body main .main-contents .catalogue-container img {
     margin: 0 2.5vw;
@@ -996,6 +980,14 @@ html body .start p img {
     font-size: 9vw;
     font-weight: 900;
   }
+  html body main .main-contents .others .sizear .sizear-middle {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  html body main .main-contents .others .sizear .sizear-bottom {
+    font-size: 3vw;
+    font-weight: bold;
+  }
   html body main .main-contents .others .sizear img {
     z-index: 2;
     width: 90vw;
@@ -1018,12 +1010,10 @@ html body .start p img {
   html body main .main-contents .others .character .character-container .wagyu img {
     z-index: 22;
   }
-  html body main .main-contents .others .character .character-container .wagyu .wagyu-name {
-    font-size: 5vw;
-    font-weight: bold;
-  }
   html body main .main-contents .others .character .character-container .wagyu .wagyu-link {
-    font-size: 5vw;
+    padding-top: 2vh;
+    width: 44vw;
+    font-size: 4vw;
     font-weight: bold;
   }
   html body main .main-contents .others .character .character-container .nanichu {
@@ -1033,75 +1023,11 @@ html body .start p img {
   html body main .main-contents .others .character .character-container .nanichu img {
     z-index: 22;
   }
-  html body main .main-contents .others .character .character-container .nanichu .nanichu-name {
-    font-size: 5vw;
-    font-weight: bold;
-  }
   html body main .main-contents .others .character .character-container .nanichu .nanichu-link {
-    font-size: 5vw;
-    font-weight: bold;
-  }
-  html body main .asobi {
-    /*wakuzawa-no-asobi-------------------------------------*/
-    margin: 10vh 0 0 0;
-    padding: 4vh 2.5vw 0 2.5vw;
-    width: 100vw;
-    position: relative;
-    z-index: 500;
-  }
-  html body main .asobi .asobi-logo {
-    width: 95vw;
-    margin: 2vh 0;
-  }
-  html body main .asobi .asobi-main .asobi-detail {
-    margin: 5vh 0;
-    padding-top: 3vh;
-    color: #fff;
+    padding-top: 2vh;
+    width: 44vw;
     font-size: 4vw;
     font-weight: bold;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item {
-    width: 95vw;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item iframe {
-    width: 95vw;
-    height: 53.4vw;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-title-container {
-    font-size: 8vw;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container {
-    margin-top: calc(24vw - 25px);
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar {
-    width: 71vw;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .start-ar a img {
-    width: 59vw;
-    position: absolute;
-    bottom: 0;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container {
-    width: 36vw;
-    display: flex;
-    justify-content: space-between;
-    /*両端揃えて均等配置*/
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a {
-    width: 10vw;
-    min-width: 30px;
-    padding-left: 2vw;
-  }
-  html body main .asobi .asobi-main .asobi-container .asobi-item .asobi-btn-container .sns-btn-container a img {
-    width: 10vw;
-    min-width: 30px;
-    position: absolute;
-    bottom: 0;
-  }
-  html body main .asobi .asobi-main .asobi-container .space {
-    width: 2vw;
   }
   html body main .contact {
     background: none;
@@ -1120,7 +1046,7 @@ html body .start p img {
   }
   html body main .contact .contact-message {
     margin-bottom: 30vh;
-    font-size: 4vw;
+    font-size: 5vw;
   }
   html body main .contact .campany-info {
     width: 90vw;
@@ -1131,6 +1057,7 @@ html body .start p img {
     display: block;
   }
   html body main .footer {
+    position: static;
     margin: 2vh 2.5vw 0 2.5vw;
     padding-bottom: 12vh;
     height: 8vh;

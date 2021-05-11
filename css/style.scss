@@ -4,7 +4,7 @@
   background-image: url(../image/wakuzawa-gr.png);
   background-size: 49%;
   background-repeat: no-repeat;
-  background-position: top 74vh left 47.5vw;
+  background-position: top 66vh left 47.5vw;
   background-attachment: fixed;
 }
 $font-color: gray;
@@ -788,7 +788,7 @@ html {
           .service {
             @include side-space;
             padding-top: 10vh;
-            height: 120vh;
+            height: 110vh;
             width: 90vw;
             border: none;
             .service-top {
@@ -858,7 +858,7 @@ html {
           } //service
 
           .header-space {
-            display: none;
+            height: 9vh;
           }
 
           .package-top {
@@ -870,6 +870,7 @@ html {
           }
 
           .package-message {
+            margin-right: 5vw;
             width: 80vw;
             height: 8vw;
             line-height: 8vw;

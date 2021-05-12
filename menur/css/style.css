@@ -245,6 +245,9 @@ h5 {
   width: 28vw;
   height: 30vw;
 }
+model-viewer button {
+  display: none;
+}
 .item button {
   display: none;
 }

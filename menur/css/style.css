@@ -245,6 +245,10 @@ h5 {
   width: 28vw;
   height: 30vw;
 }
+/*modelviewer内のボタンは非表示*/
+model-viewer #custom-ar-button {
+  display: none;
+}
 .item button {
   display: none;
 }

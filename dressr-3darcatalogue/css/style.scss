@@ -191,9 +191,6 @@ html {
             height: $mv-height;
             background-color: #fff;
           } //model-viewer
-          .model-viewer-btn {
-            display: none;
-          } //model-viewer-btn
         } //ar-item
       } //ar-container
 
@@ -359,3 +356,21 @@ html {
     } //body
   } //html
 } //media
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .model-viewer-btn {
+    display: block;
+    width: $img-width;
+    height: 5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    color: white;
+    background-color: #525252;
+    border: none;
+  } //model-viewer-btn
+}
+@media (min-width: 1025px) {
+  .model-viewer-btn {
+    display: none;
+  } //model-viewer-btn
+}

@@ -437,9 +437,9 @@ html {
             img {
               z-index: 2;
             }
-            .sizear-link {
-              display: none;
-            }
+            // .sizear-link {
+            //   display: none;
+            // }
           }
           .character {
             width: 76vw;
@@ -619,7 +619,6 @@ html {
           opacity: 0.8;
           border-radius: 4px;
           cursor: pointer;
-          box-shadow: 0 5px rgb(41, 41, 41);
 
           &:hover {
             opacity: 1;
@@ -1289,3 +1288,20 @@ html {
     } //body
   } //html
 } //media
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .sizear-link {
+    display: block;
+    width: 25vw;
+    font-size: 2.3vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #707070;
+    margin-top: 5vh;
+  }
+}
+@media (min-width: 1025px) {
+  .sizear-link {
+    display: none;
+  }
+}

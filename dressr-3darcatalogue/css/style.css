@@ -199,10 +199,6 @@ html body main .ar-container .ar-item .model-viewer {
   background-color: #fff;
 }
 
-html body main .ar-container .ar-item .model-viewer-btn {
-  display: none;
-}
-
 html body main .ar-sentence {
   margin-top: 4vw;
 }
@@ -370,5 +366,24 @@ html body footer {
     color: white;
     background-color: #525252;
     border: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .model-viewer-btn {
+    display: block;
+    width: 17.1vw;
+    height: 5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    color: white;
+    background-color: #525252;
+    border: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .model-viewer-btn {
+    display: none;
   }
 }

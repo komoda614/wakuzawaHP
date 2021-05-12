@@ -491,10 +491,6 @@ html body main .main-contents .others .sizear img {
   z-index: 2;
 }
 
-html body main .main-contents .others .sizear .sizear-link {
-  display: none;
-}
-
 html body main .main-contents .others .character {
   width: 76vw;
   padding-top: 16vh;
@@ -610,7 +606,6 @@ html body main .contact .contact-btn {
   opacity: 0.8;
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0 5px #292929;
 }
 
 html body main .contact .contact-btn:hover {
@@ -1207,5 +1202,23 @@ html body .start p img {
   }
   html body .start p img {
     width: 70vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .sizear-link {
+    display: block;
+    width: 25vw;
+    font-size: 2.3vw;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 1px solid #707070;
+    margin-top: 5vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .sizear-link {
+    display: none;
   }
 }

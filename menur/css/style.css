@@ -377,9 +377,6 @@ footer {
     background: #da6a36;
     border-radius: 0 0 5px 5px;
   }
-  model-viewer button {
-    display: none;
-  }
   button .btn-induction {
     width: calc(92vw - 2.5px);
     height: 8vw;
@@ -489,9 +486,6 @@ footer {
     color: white;
     background: #da6a36;
     border-radius: 0 0 5px 5px;
-  }
-  model-viewer button {
-    display: none;
   }
 
   button .btn-induction {

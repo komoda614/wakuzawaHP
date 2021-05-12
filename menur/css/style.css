@@ -245,7 +245,7 @@ h5 {
   width: 28vw;
   height: 30vw;
 }
-.item button {
+.food-btn {
   display: none;
 }
 .custom-ar-button {
@@ -373,7 +373,7 @@ footer {
     width: 90vw;
     height: 92vw;
   }
-  .item button {
+  .food-btn {
     display: block;
     width: calc(92vw - 2.5px);
     height: 28vw;
@@ -488,7 +488,7 @@ footer {
     height: 30vw;
   }
 
-  .item button {
+  .food-btn {
     display: block;
     width: calc(28vw - 2.5px);
     height: 10vw;

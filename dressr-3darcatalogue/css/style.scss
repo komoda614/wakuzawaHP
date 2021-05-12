@@ -190,6 +190,10 @@ html {
             width: $img-width;
             height: $mv-height;
             background-color: #fff;
+            .custom-ar-button {
+              width: 0;
+              height: 0;
+            }
           } //model-viewer
         } //ar-item
       } //ar-container
@@ -339,6 +343,10 @@ html {
               height: 75vw;
               margin-bottom: 4px;
               background-color: #fff;
+              .custom-ar-button {
+                width: 0;
+                height: 0;
+              }
             }
             .model-viewer-btn {
               display: block;
@@ -358,6 +366,10 @@ html {
 } //media
 
 @media (min-width: 601px) and (max-width: 1024px) {
+  .custom-ar-button {
+    width: 0;
+    height: 0;
+  }
   .model-viewer-btn {
     display: block;
     width: $img-width;

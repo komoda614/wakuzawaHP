@@ -103,7 +103,6 @@ html body main .instagram-btn {
   opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #dddddd;
 }
 
 html body main .instagram-btn:hover {
@@ -153,7 +152,6 @@ html body main .contact-btn {
   opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #525252;
 }
 
 html body main .contact-btn a {
@@ -217,7 +215,6 @@ html body .contact-btn {
   opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #525252;
 }
 
 html body .contact-btn a {

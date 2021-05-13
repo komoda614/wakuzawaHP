@@ -468,12 +468,12 @@ html {
                   font-weight: bold;
                   color: #fff;
                   text-align: center;
-                  opacity: 0.8;
+                  opacity: 1;
                   border-radius: 6px;
                   background-color: #06c755;
                   cursor: pointer;
                   &:hover {
-                    opacity: 1;
+                    background-color: #50f896;
                   }
 
                   &:active {
@@ -501,12 +501,12 @@ html {
                   font-weight: bold;
                   color: #fff;
                   text-align: center;
-                  opacity: 0.8;
+                  opacity: 1;
                   border-radius: 6px;
                   background-color: #06c755;
                   cursor: pointer;
                   &:hover {
-                    opacity: 1;
+                    background-color: #50f896;
                   }
 
                   &:active {
@@ -1166,6 +1166,7 @@ html {
             margin-bottom: 3vh;
             height: 6vh;
             width: 70vw;
+            opacity: 1;
 
             a {
               width: 70vw;
@@ -1203,18 +1204,13 @@ html {
           height: 30px;
           width: 110px;
           background-color: #000;
-          opacity: 0.8;
+          opacity: 1;
           border-radius: 4px;
           cursor: pointer;
-          box-shadow: 0 5px rgb(41, 41, 41);
           position: fixed;
           top: 80vh;
           left: 68vw;
           z-index: 50;
-
-          &:hover {
-            opacity: 1;
-          }
 
           &:active {
             position: relative;
@@ -1223,6 +1219,12 @@ html {
           }
 
           a {
+            height: 30px;
+            width: 110px;
+            position: fixed;
+            top: 80vh;
+            left: 68vw;
+
             img {
               width: 96px;
               position: absolute; /*縦横中央寄せ*/

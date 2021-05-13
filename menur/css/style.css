@@ -175,7 +175,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
   margin: 0 auto;
 }
 header img {
@@ -202,7 +201,6 @@ header img {
 
 /* main--------------------------------- */
 main {
-  max-width: 1100px;
   margin: 0 auto;
   width: 92vw;
   color: gray;

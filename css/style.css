@@ -527,14 +527,14 @@ html body main .main-contents .others .character .character-container .wagyu .wa
   font-weight: bold;
   color: #fff;
   text-align: center;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 6px;
   background-color: #06c755;
   cursor: pointer;
 }
 
 html body main .main-contents .others .character .character-container .wagyu .wagyu-link:hover {
-  opacity: 1;
+  background-color: #50f896;
 }
 
 html body main .main-contents .others .character .character-container .wagyu .wagyu-link:active {
@@ -565,14 +565,14 @@ html body main .main-contents .others .character .character-container .nanichu .
   font-weight: bold;
   color: #fff;
   text-align: center;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 6px;
   background-color: #06c755;
   cursor: pointer;
 }
 
 html body main .main-contents .others .character .character-container .nanichu .nanichu-link:hover {
-  opacity: 1;
+  background-color: #50f896;
 }
 
 html body main .main-contents .others .character .character-container .nanichu .nanichu-link:active {
@@ -1092,6 +1092,7 @@ html body .start p img {
     margin-bottom: 3vh;
     height: 6vh;
     width: 70vw;
+    opacity: 1;
   }
   html body main .contact .contact-btn a {
     width: 70vw;
@@ -1127,22 +1128,25 @@ html body .start p img {
     height: 30px;
     width: 110px;
     background-color: #000;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 5px #292929;
     position: fixed;
     top: 80vh;
     left: 68vw;
     z-index: 50;
   }
-  html body main .smf-contact-btn:hover {
-    opacity: 1;
-  }
   html body main .smf-contact-btn:active {
     position: relative;
     top: 5px;
     box-shadow: none;
+  }
+  html body main .smf-contact-btn a {
+    height: 30px;
+    width: 110px;
+    position: fixed;
+    top: 80vh;
+    left: 68vw;
   }
   html body main .smf-contact-btn a img {
     width: 96px;

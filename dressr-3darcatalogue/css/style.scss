@@ -13,7 +13,6 @@
   background-color: #000;
   opacity: 1;
   cursor: pointer; /*カーソル乗せると指になる*/
-  box-shadow: 0 5px #525252;
 }
 @mixin contact-btn-a {
   height: 6.9vh;
@@ -114,7 +113,6 @@ html {
         font-size: 1.3vw;
         opacity: 1;
         cursor: pointer; /*カーソル乗せると指になる*/
-        box-shadow: 0 5px #dddddd;
 
         &:hover {
           opacity: 0.8;
